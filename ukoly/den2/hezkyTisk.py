@@ -3,10 +3,10 @@
 
 '''
 
-  apples Alice  dogs
- oranges   Bob  cats
-cherries Carol moose
-  banana David goose
+   jablka   Alenka   pes
+pomerance    Honza kocka
+   tresne Karolina   mys
+    banan    David  husa
 
 '''
 
