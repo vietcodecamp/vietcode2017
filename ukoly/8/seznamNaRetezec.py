@@ -4,4 +4,6 @@
 # Priklad: spam = [parky, slanina, sunka, salam]
 # Funkce by mela vratit retezec: 'parky, slanina, sunka a salam.
 
-spam = [parky, slanina, sunka, salam]
+def naRetezec(spam):
+    
+    return
