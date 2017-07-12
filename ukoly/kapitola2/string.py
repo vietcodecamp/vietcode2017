@@ -18,7 +18,51 @@ def upper_case():
     pass
 
 
-# Vypis 127. znak
+# Vypis 127. znak uryvku pomoci indexu
 def char_127th():
+    # zde napis svuj kod
+    pass
+
+
+# Vypis 1. znak uryvku pomoci indexu
+def char_1st():
+    # zde napis svuj kod
+    pass
+
+
+# Vypis posledni znak uryvku pomoci indexu
+def char_last():
+    # zde napis svuj kod
+    pass
+
+
+# Vypis 100. znak od konce uryvku pomoci indexu
+def char_100th_last():
+    # zde napis svuj kod
+    pass
+
+
+# Vypis prvnich 52 znaku z uryvku
+def char_first_52():
+    # zde napis svuj kod
+    pass
+
+
+# Vypis retezec znaku od 100. pozice az do konce retezce
+def char_from_100():
+    # zde napis svuj kod
+    pass
+
+
+# Vypis retezec znaku od 50. pozice do 100. pozice (vcetne)
+def char_50_to_100():
+    # zde napis svuj kod
+    pass
+
+
+# --------------------------------------------
+
+# Vypis Viet Code je nejnejnej... (100 krat nej) ...nejlepsi kurz ever!
+def repeated_string():
     # zde napis svuj kod
     pass

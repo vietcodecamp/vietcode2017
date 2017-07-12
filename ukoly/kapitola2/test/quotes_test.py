@@ -19,6 +19,10 @@ class MyTestCase(unittest.TestCase):
             single_quotes()
         self.assertEqual(self.out.getvalue(), "Alenka rekla: 'Bez mi koupit rohliky, Honzo.'\n")
 
+    def test_mixed_quotes(self):
+        with redirect_stdout(self.out):
+            mixed_quotes()
+        self.assertEqual(self.out.getvalue(), '"You\'ll be an IT specialist!, that\'s what the guys at Viet Code said."\n')
 
 if __name__ == '__main__':
     unittest.main()
