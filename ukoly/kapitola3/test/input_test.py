@@ -22,5 +22,11 @@ class MyTestCase(unittest.TestCase):
                 input_age()
                 self.assertEqual(self.out.getvalue(), "Zbyva ti 42 let do duchodu!\n")
 
+    def test_input_power(self):
+        with mock.patch('builtins.input', return_value='234'):
+            with redirect_stdout(self.out):
+                input_power()
+                self.assertEqual(self.out.getvalue(), "54756\n")
+
 if __name__ == '__main__':
     unittest.main()
