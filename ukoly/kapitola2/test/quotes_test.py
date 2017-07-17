@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
     def test_mixed_quotes(self):
         with redirect_stdout(self.out):
             mixed_quotes()
-        self.assertEqual(self.out.getvalue(), '"You\'ll be an IT specialist!, that\'s what the guys at Viet Code said."\n')
+        self.assertEqual(self.out.getvalue(), '"You\'ll be an IT specialist!\", that\'s what the guys at Viet Code said."\n')
 
 if __name__ == '__main__':
     unittest.main()
