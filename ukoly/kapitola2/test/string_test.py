@@ -67,7 +67,7 @@ class MyTestCase(unittest.TestCase):
                          "Viet Code je nejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnej"
                          "nejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnej"
                          "nejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnejnej"
-                         "nejnejnejnejnejnejnejnejnejnejnejnejlepsi kurz ever!")
+                         "nejnejnejnejnejnejnejnejnejnejnejnejlepsi kurz ever!\n")
 
 
 if __name__ == '__main__':

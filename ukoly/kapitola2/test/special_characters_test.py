@@ -12,7 +12,7 @@ class MyTestCase(unittest.TestCase):
     def test_backslash(self):
         with redirect_stdout(self.out):
             backslash()
-            self.assertEqual(self.out.getvalue(), "\\")
+            self.assertEqual(self.out.getvalue(), "\\\n")
 
     def test_new_line_escaping(self):
         with redirect_stdout(self.out):
