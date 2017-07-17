@@ -1,17 +1,17 @@
 # Vypis: \
 def backslash():
-    # zde napis svuj kod
+    print("\\")
     pass
 
 
 # Vypis: D:\moje_serialy\naruto
 def new_line_escaping():
-    # zde napis svuj kod
+    print("D:\moje_serialy\\naruto")
     pass
 
 
 # Vypis s pomoci unicode U+2665:
 # I [unicode znak] Viet Code!
 def unicode():
-    # zde napis svuj kod
+    print("I \u2665 Viet Code!")
     pass

@@ -8,55 +8,55 @@ uryvek = "Má kresba ovšem není zdaleka tak půvabná jako model.Ale za to já
 
 # Vypis pocet znaku uryvku.
 def string_length():
-    # zde napis svuj kod
+    print(len(uryvek))
     pass
 
 
 # Premen vsechna pismena v uryvku na velka pismena (upper case) a vypis ho.
 def upper_case():
-    # zde napis svuj kod
+    print(uryvek.upper())
     pass
 
 
 # Vypis 127. znak uryvku pomoci indexu
 def char_127th():
-    # zde napis svuj kod
+    print(uryvek[126])
     pass
 
 
 # Vypis 1. znak uryvku pomoci indexu
 def char_1st():
-    # zde napis svuj kod
+    print(uryvek[0])
     pass
 
 
 # Vypis posledni znak uryvku pomoci indexu
 def char_last():
-    # zde napis svuj kod
+    print(uryvek[-1])
     pass
 
 
 # Vypis 100. znak od konce uryvku pomoci indexu
 def char_100th_last():
-    # zde napis svuj kod
+    print(uryvek[-100])
     pass
 
 
 # Vypis prvnich 52 znaku z uryvku
 def char_first_52():
-    # zde napis svuj kod
+    print(uryvek[:52])
     pass
 
 
 # Vypis retezec znaku od 100. pozice az do konce retezce
 def char_from_100():
-    # zde napis svuj kod
+    print(uryvek[99:])
     pass
 
 
 # Vypis retezec znaku od 50. pozice do 100. pozice (vcetne)
 def char_50_to_100():
-    # zde napis svuj kod
+    print(uryvek[49:99])
     pass
 
 
@@ -64,5 +64,5 @@ def char_50_to_100():
 
 # Vypis Viet Code je nejnejnej... (100 krat nej) ...nejlepsi kurz ever!
 def repeated_string():
-    # zde napis svuj kod
+    print("Viet Code je " + "nej" * 100 + "lepsi kurz ever!")
     pass
