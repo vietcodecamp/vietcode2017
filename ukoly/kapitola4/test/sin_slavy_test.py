@@ -11,6 +11,15 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(nove_pole[:-1], legends)
         self.assertNotEqual(nove_pole[-1], "Jobs")
 
+    def test_pole_smaz(self):
+        nove_pole = pole_smaz()
+        self.assertEqual(len(nove_pole), len(legends) - 1)
+        self.assertEqual(nove_pole, ["Einstein", "Newton", "Dacos", "Napoleon", "Caesar", "Gates"])
+
+    def test_pole_obrat(self):
+        nove_pole = pole_obrat()
+        self.assertEqual(nove_pole, ['Jobs', 'Gates', 'Musk', 'Caesar', 'Napoleon', 'Dacos', 'Newton', 'Einstein'])
+
     def test_pole_prepis(self):
         nove_pole = pole_prepis()
         self.assertEqual(len(nove_pole), len(legends))
