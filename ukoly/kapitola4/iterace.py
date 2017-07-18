@@ -1,5 +1,3 @@
-
-
 # Nasledujici kod navstivi kazdy prvek pole seznam
 # Uprav funkci, aby pro dany seznam vypis druhe mocniny vsech jeho prvku
 # Vstup: [1, 2, 3, 4, 5]

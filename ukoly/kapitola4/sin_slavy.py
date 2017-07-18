@@ -1,5 +1,3 @@
-
-
 # Pridej sve jmeno do sine slavy s pomoci funkce append
 
 def pole_pridej():

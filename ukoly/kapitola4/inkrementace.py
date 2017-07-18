@@ -1,5 +1,3 @@
-
-
 # Uz jsme videli kod pro prochazeni polem.
 # Pracne jste vytukali ceny do vasi EET pokladny,
 # ale prisla maminka a chtela vsechny ceny zvysit o jednu korunu.

@@ -1,5 +1,3 @@
-
-
 # Dopln implementaci funkce, ktera porovna delku dvou seznamu
 
 def porovnej(seznam1: list, seznam2: list):
