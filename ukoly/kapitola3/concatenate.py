@@ -9,11 +9,11 @@ print('Jmenuji se ' + jmeno + ' a jsem ' + druh + '. Moji oblibenou zbrani se st
 
 # Podobne jako vyse, pouzij hodnoty promennych ke zretezeni textu s pouzitim operatoru %
 def concatenate_with_percentage_operator():
-    # zde napis svuj kod
+    print('Jmenuji se %s a jsem %s. Moji oblibenou zbrani se stal %s a muj ukol je %s.' % (jmeno, druh, zbran, mise))
     pass
 
 
 # Podobne jako vyse, pouzij hodnoty promennych ke zretezeni textu s pouzitim .format()
 def concatenate_with_format():
-    # zde napis svuj kod
+    print('Jmenuji se {} a jsem {}. Moji oblibenou zbrani se stal {} a muj ukol je {}.'.format(jmeno, druh, zbran, mise))
     pass

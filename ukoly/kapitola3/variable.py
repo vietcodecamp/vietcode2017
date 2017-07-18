@@ -4,5 +4,8 @@
 # 3."Odin" k rodina
 # vypis tyto hodnoty za sebou oddelene carkou - "uranus, slunecnice, Odin"
 def assign_value_to_variable():
-    # zde napis svuj kod
+    planeta = "uranus"
+    nakup = "slunecnice"
+    rodina = "Odin"
+    print(planeta + ", " + nakup + ", " + rodina)
     pass

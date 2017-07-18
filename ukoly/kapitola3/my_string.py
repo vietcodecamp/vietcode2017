@@ -4,5 +4,7 @@
 # VIETCODE
 # 8
 def my_uppercase_string():
-    # zde napis svuj kod
+    muj_retezec = "Viet Code"
+    print(muj_retezec.upper())
+    print(len(muj_retezec))
     pass
