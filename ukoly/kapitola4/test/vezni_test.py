@@ -9,7 +9,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_pole_sort(self):
         nove_pole = pole_sort()
-        self.assertEqual(nove_pole, ["ABFU", "BFU", "Pedofil Honza", "Vrah David", "Dacos", "Roman", "Zlodej Petr"])
+        self.assertEqual(nove_pole, ['ABFU', 'BFU', 'Dacos', 'Pedofil Honza', 'Roman', 'Vrah David', 'Zlodej Petr'])
 
     def test_pole_del(self):
         nove_pole = pole_del()
