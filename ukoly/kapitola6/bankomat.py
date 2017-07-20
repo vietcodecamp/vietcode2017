@@ -5,8 +5,8 @@
 # Pokud vsechno projde, tak vypis: "Vyplacim [castka] Kc"
 
 
-platna_karta = 43-1199223344
-pin = 3194
+platna_karta = "43-1199223344"
+platny_pin = 3194
 zustatek_na_uctu = 1000
 
 def bankomat(cislo_karty :str, pin :int, castka :int):
