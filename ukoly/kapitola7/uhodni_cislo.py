@@ -1,7 +1,8 @@
-# Hra "Uhodni na jake cislo myslim"
 import random
-moje_cislo = random.randint(1, 20) # Nahodne vygenerovane cislo mezi 1 az 20
-print('Myslim na cislo mezi 1 a 20')
+
+# Hra "Uhodni na jake cislo myslim"
+moje_cislo = random.randint(1, 20)  # Nahodne vygenerovane cislo mezi 1 az 20
+print('Myslim si cislo mezi 1 a 20')
 
 # Zeptej se uzivatele aby hadal 6x
 # Napoveda: pouzij for loop, range(), input(), if, elif, else a break
