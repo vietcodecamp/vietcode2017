@@ -25,7 +25,7 @@ def vysoky_tlak(systolic: int, diastolic: int):
 
 
 # Zjisti, zda vezen lze. Vezen lze pokud
-# ma tep srdce vyssi nez 90 uderu za minutu a zaroven bud se cervena nebo se poti
+# ma tep srdce vyssi nez 90 uderu za minutu a zaroven se cervena nebo se poti
 def detektor_lzi(cervena_se: bool, poti_se: bool, tep: int):
     vezen_lze = None  # Uprav vyraz None
     return vezen_lze
