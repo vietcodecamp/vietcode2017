@@ -4,3 +4,4 @@
 
 def absolutni_hodnota():
     # vas kod zde    
+    pass

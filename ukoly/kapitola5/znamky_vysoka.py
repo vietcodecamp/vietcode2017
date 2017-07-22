@@ -1,5 +1,3 @@
-
-
 # Ziskejte od uzivatele pocet bodu od 0 do 100
 # pokud je pocet bodu mezi 0 a 50, tak vypiste "F"
 # pokud je pociet bodu mezu 50 a 60, vypiste E
@@ -12,4 +10,4 @@
 
 def preved_znamky():
     # vas kod zde
-    
+    pass
