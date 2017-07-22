@@ -6,34 +6,43 @@
 # Vypis soucet mezi x a y.
 # Soucet je: [soucet x a y]
 def soucet():
-    # zde napis svuj kod
-    pass
+    x = int(input("Zadej prosim cislo x:"))
+    y = int(input("Zadej prosim cislo y:"))
+    soucet = x + y
+    print("Soucet je: " + str(soucet))
 
 
 # Vypis rozdil mezi x a y.
 # Rozdil je: [rozdil x a y]
 def rozdil():
-    # zde napis svuj kod
-    pass
+    x = int(input("Zadej prosim cislo x:"))
+    y = int(input("Zadej prosim cislo y:"))
+    rozdil = x - y
+    print("Rozdil je: " + str(rozdil))
 
 
 # Vypis soucin mezi x a y.
 # Soucin je: [soucin x a y]
 def soucin():
-    # zde napis svuj kod
-    pass
-
+    x = int(input("Zadej prosim cislo x:"))
+    y = int(input("Zadej prosim cislo y:"))
+    soucin = x * y
+    print("Soucin je: " + str(soucin))
 
 # Vypis podil se zbytkem mezi x a y.
 # Podil se zbytkem je: [podil x a y]
 def podil_se_zbytkem():
-    # zde napis svuj kod
-    pass
+    x = int(input("Zadej prosim cislo x:"))
+    y = int(input("Zadej prosim cislo y:"))
+    podil = x / y
+    print("Podil se zbytkem je: " + str(podil))
 
 # Vypis celociselny podil mezi x a y.
 # Celociselny podil je: [podil x a y]
 def podil_celociselny():
-    # zde napis svuj kod
-    pass
+    x = int(input("Zadej prosim cislo x:"))
+    y = int(input("Zadej prosim cislo y:"))
+    podil = x // y
+    print("Celociselny podil je: " + str(podil))
 
 

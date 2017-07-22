@@ -9,5 +9,25 @@
 
 
 def preved_znamky():
-    # vas kod zde
-    pass
+    body = int(input("Zadej pocet bodu: "))
+    if (body < 0) or (body > 100):
+        print("Neplatny pocet bodu!")
+        return
+    if (body >= 0) and (body < 50):
+        print("F")
+        return
+    if (body >= 50) and (body < 60):
+        print("E")
+        return
+    if (body >= 60) and (body < 70):
+        print("D")
+        return
+    if (body >= 70) and (body < 80):
+        print("C")
+        return
+    if (body >= 80) and (body < 90):
+        print("B")
+        return
+    if (body >= 90) and (body <= 100):
+        print("A")
+        return

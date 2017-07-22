@@ -3,5 +3,7 @@
 # vypis "absolutni hodnota je [cislo]"
 
 def absolutni_hodnota():
-    # vas kod zde    
-    pass
+    cislo = int(input("Zadej cele cislo: "))
+    if cislo < 0:
+        cislo = - cislo
+    print("absolutni hodnota je " + str(cislo))
