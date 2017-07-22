@@ -13,8 +13,8 @@ def pole_sort():
     return fronta
 
 
-# A to nejlepsi nakonec. Zbavime se ABFU a BFU pomoci del
-def pole_del():
+# A to nejlepsi nakonec. Zbavime se ABFU a BFU pomoci remove. Pouzij index misto prime hodnoty
+def pole_remove_index():
     fronta = ["ABFU", "BFU", "Dacos", "Pedofil Honza", "Roman", "Vrah David", "Zlodej Petr"]
     # zde napis svuj kod
     return fronta

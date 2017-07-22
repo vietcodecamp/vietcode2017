@@ -11,8 +11,8 @@ class MyTestCase(unittest.TestCase):
         nove_pole = pole_sort()
         self.assertEqual(nove_pole, ['ABFU', 'BFU', 'Dacos', 'Pedofil Honza', 'Roman', 'Vrah David', 'Zlodej Petr'])
 
-    def test_pole_del(self):
-        nove_pole = pole_del()
+    def test_pole_remove_index(self):
+        nove_pole = pole_remove_index()
         self.assertEqual(nove_pole, ["Dacos", "Pedofil Honza", "Roman", "Vrah David", "Zlodej Petr"])
 
     def test_pole_pop(self):
