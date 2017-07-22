@@ -10,4 +10,4 @@
 
 def umocni(seznam: list):
     for prvek in seznam:
-        print(prvek)
+        print(prvek**2)

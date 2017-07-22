@@ -5,5 +5,5 @@
 def spoj_seznamy():
     seznam1 = ["ahoj", "tady", "se", "to", "ma"]
     seznam2 = ['spojit', 'a', 'vzniknout', 'jeden', 'seznam']
-    vysledny_seznam = []
+    vysledny_seznam = seznam1 + seznam2
     return vysledny_seznam

@@ -3,5 +3,5 @@
 
 def vypis_prvek():
     pole = ["zvykacka", "zmrzlina", "banh mi", "kokosky", "cokoladovy dort"]
-    # zde napis svuj kod
+    print(pole[3])
     pass

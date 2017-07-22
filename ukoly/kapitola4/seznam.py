@@ -10,5 +10,6 @@
 # a vypis obsah pole
 
 def inicializace_pole():
-    x_seznam = None  # prepis vyraz None
+    x_seznam = [1, 2, 10, 5]  # prepis vyraz None
+    print(x_seznam)
     pass

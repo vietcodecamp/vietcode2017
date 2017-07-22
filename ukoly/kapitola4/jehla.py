@@ -9,5 +9,7 @@
 def kupka_sena():
     kupka = ["seno", "seno", ["seno", "seno"], "seno", "seno", "seno",
              ["seno", "seno", "seno", "seno", ["seno", "jehla", "seno"], "seno", "seno", "seno"], "seno"]
-    # zde napis svuj kod
-    pass
+    # jehla lezi na indexech kupka[6][4][1]
+    print(6)
+    print(4)
+    print(1)
