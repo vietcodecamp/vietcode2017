@@ -4,11 +4,13 @@
 
 def filtr(seznam):
     for prvek in seznam:
-        print(prvek)
+        if prvek < 5:
+            print(prvek)
 
 
 # Jste schopni upravit funkci filter_2 tak, aby slo nastavit
 # jine cislo na porovnani nez jenom 5? S pomoci parametru funkce
-def filtr_2(seznam):
+def filtr_2(seznam, limit):
     for prvek in seznam:
-        print(prvek)
+        if prvek < limit:
+            print(prvek)

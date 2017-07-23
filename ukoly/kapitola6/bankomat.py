@@ -10,5 +10,13 @@ platny_pin = 3194
 zustatek_na_uctu = 1000
 
 def bankomat(cislo_karty :str, pin :int, castka :int):
-    # zde dopln svuj kod
-    pass
+    if cislo_karty != platna_karta:
+        print("Neplatna karta! Vracim kartu!")
+        return
+    if pin != platny_pin:
+        print("Neplatny PIN! Vracim kartu!")
+        return
+    if castka > zustatek_na_uctu:
+        print("Nedostatek penez na uctu! Vracim kartu!")
+        return
+    print("Vyplacim " + str(castka) + " Kc")

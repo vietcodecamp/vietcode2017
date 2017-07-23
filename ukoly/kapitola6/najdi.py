@@ -3,5 +3,8 @@
 # pokud hodnota v seznamu je, vytisknete "hodnota nalezena"
 # pokud tam neni, vytisknete "hodnota nenalezena"
 
-def najdi(seznam, hodnota):
-    pass
+def najdi(seznam :list, hodnota):
+    if hodnota in seznam:
+        print("hodnota nalezena")
+    else:
+        print("hodnota nenalezena")

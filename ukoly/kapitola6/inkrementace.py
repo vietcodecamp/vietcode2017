@@ -7,6 +7,6 @@
 
 def inkrementuj(seznam: list):
     zvetseny_seznam = []
-    # sem napis svuj kod
-
+    for prvek in seznam:
+        zvetseny_seznam.append(prvek + 1)
     return zvetseny_seznam
