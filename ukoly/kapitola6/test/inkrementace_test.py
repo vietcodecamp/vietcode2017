@@ -1,5 +1,5 @@
 import unittest
-from ukoly.kapitola4.inkrementace import *
+from ukoly.kapitola6.inkrementace import *
 
 
 class MyTestCase(unittest.TestCase):
