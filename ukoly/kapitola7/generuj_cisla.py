@@ -9,11 +9,21 @@
 # 25
 # 36
 def generuj_cisla_for():
-    # zde napis svuj kod
-    pass
+    cislo = int(input("Zadej prosim nejake nezaporne cislo: "))
+    if cislo <= 0:
+        print("BFU detected! Prosim priste zadej NEZAPORNE cislo!")
+        return
+    for i in range(cislo):
+        print(i**2)
 
 
 # Udelej to same co nahore, akorat s pomoci ridici struktury while.
 def generuj_cisla_while():
-    # zde napis svuj kod
-    pass
+    cislo = int(input("Zadej prosim nejake nezaporne cislo: "))
+    if cislo <= 0:
+        print("BFU detected! Prosim priste zadej NEZAPORNE cislo!")
+        return
+    i = 1
+    while i <= cislo:
+        print(i**2)
+        i = i + 1

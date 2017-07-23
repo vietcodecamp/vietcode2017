@@ -6,4 +6,10 @@
 # 3. pho
 # 4. gulas
 
-jidla = []  # Uloz do pole svoje oblibena jidla podle tvych priorit.
+jidla = ["bun cha", "knedlo vepro zelo", "pho", "gulas"]  # Uloz do pole svoje oblibena jidla podle tvych priorit.
+
+i = 1
+for prvek in jidla:
+    print(str(i) + ". " + prvek)
+    i = i + 1
+
