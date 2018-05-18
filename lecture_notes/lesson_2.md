@@ -111,7 +111,6 @@ print(f"Obvod kružnice je {obvod} a obsah kruhu je {obsah}")
 ## Exercises
 ### Input length
 * Write a script that reads the input of a user and tells him how many characters he wrote
-
 ```python
 vstup = input("Napis text ")
 pocet_znaku = len(vstup)
@@ -122,7 +121,6 @@ print(odpoved)
 ### Quotes in string
 * Write a script that asks the user for input, then repeats the input in quotes like this: __"You said " ", am I right?"__
   * Note we want the **quote marks inside**!
-
 ```python
 vstup = input("Napis text ")
 odpoved = 'You said "' + vstup + '", am I right?'
@@ -131,7 +129,6 @@ print(odpoved)
 
 ### Saving inputs into a list
 * Write a script that asks for 3 names, saves them to a list and prints it
-
 ```python
 jmena = [] # empty list
 jmena.append(input("Napiš první jméno: "))
@@ -148,7 +145,6 @@ x = "kaktus klobasa kolovratek krab"
 * What is `x[3]`?
 * What is `x[6]`?
 * What is `x[5:8]`?
-
 ```python
 print(x[3]) # 't'
 print(x[6]) # ' '
@@ -157,13 +153,11 @@ print(x[5:8]) # 's k'
 
 ### Upper Case
 * Write a script that yells back at you whatever you tell it. You will use `upper()`
-
 ```python
 vstup = input("Co delas ")
 odpoved = vstup.upper() + "!!!"
 print(odpoved)
 ```
-
 ### X-mass tree
 * Draw a x-mass tree. Use a single print function and a string concatenation method
   * Note, we will improve this using loops later on
@@ -186,13 +180,12 @@ print(prostredni_hvezda + "  ***\n" + " *****\n" + "*******\n" + prostredni_hvez
 * Draw a 4 x 4 empty rectangle using string concatenation and \n
   * Note, we will also improve this using loops later on
 
-```
+```python
 ****
 *  *
 *  *
 ****
 ```
-
 ```python
 radek = "****"
 sloupec = "*  *"
@@ -201,7 +194,6 @@ vysledek = "{}\n{}\n{}\n{}".format(radek, sloupec, sloupec, radek)
 
 ### Single quotes and escaping
 * print out `Alenka řekla: "Běž mi koupit rohlíky, Honzo."` using single quotes AND escaping
-
 ```python
 print( "Alenka řekla: \"Běž mi koupit rohlíky, Honzo.\"")
 print( 'Alenka řekla: "Běž mi koupit rohlíky, Honzo."')
