@@ -5,8 +5,8 @@
 
 ## Variables
 * To work with data, a computer needs to store the values somewhere accessible to a human as well. For that we use the '=' operator.
-* Note that x = 3 doesn't mean "x is equal to 3", but "save the number 3 to the variable x" It's a command, not a statement!
-* We can save constants, strings, but most importantly the results of functions. Note we have to read the text from right to left, as in x = f(y) "do this and save the result in x"
+* Note that `x = 3` doesn't mean "x is equal to 3", but "save the number 3 to the variable x" It's a command, not a statement!
+* We can save constants, strings, but most importantly the results of functions. Note we have to read the text from right to left, as in `x = f(y)` "do this and save the result in x"
 * People tend to want say "this is how the solution should look like" instead of "this is what you should do"
 * Reading code exercise
 
@@ -55,7 +55,7 @@ x = 3 + "ahoj" # error
 int / int => int
 
 We can cast types to different types using the following functions
-**int(), float(), str()**
+`int()`,`float()`, `str()`
 ```python
 x = 3.0 # x is a float
 x = int(x) # x is now 3
@@ -67,7 +67,7 @@ y = float(y) # y is 5.6
 ```
 
 ## Input and output
-* The easiest way to get input from the user is the **input()** function in python3. Note the **data type is a string**.
+* The easiest way to get input from the user is the `input()` function in python3. Note the **data type is a string**.
 * Print is a large chapter and might need a separate lesson.
 * Mention input sanitization.
 
@@ -81,20 +81,20 @@ y = input("Zadejte prosim cislo")
 ```
 
 ## Operators
-* Basic things such as **+, -, /, //, \*, \*\*, ==, %**
+* Basic things such as `+ `, `-`, `/`, `//`, `*`, `**`, `==`, `%`
 * What happens when we nest functions together?
 * Please mention string concatenation at this point
 ```python
 x = "ahoj"
 y = "ky"
 z = x + y
-print(z)
+print(z) # prints "ahojky"
 ```
 
 ## Exercises
 ### Retirement
 * Write a program that receives your age and tells you **how many years** you have left **before you retire**. (The age of retirement should be **65**.
-You will only need **input(), print(), int(), str() and float()** for casting
+You will only need `input()`,`print()`,`int()`,`str()` and `float()` for casting
 
 ```python
 # expected output at this point
@@ -107,7 +107,7 @@ print(odpoved)
 
 ### Body Mass Index
 * Write a program asks you for your **weight and height** and calculates your **BMI**. Lookup the BMI formula on wikipedia. Use meters instead of centimeters
-You will only need **input(), print(), str() and float()** for casting
+You will only need `input()`,`print()`, and `float()` for casting
 
 ```python
 # expected output at this point
@@ -115,10 +115,10 @@ You will only need **input(), print(), str() and float()** for casting
 vaha = float(input("Kolik vazis? (v kg)"))
 vyska = float(input("Kolik meris? (v metrech)"))
 bmi = vaha / vyska ** 2
-print("Tvé BMI je " + bmi)
+print("Tvé BMI je " + str(bmi))
 ```
 ### Circle
-* Write a program that receives a **radius** of a circle and calculates its circumference, area and volume of a sphere. You will only need **input(), print(), float()** for casting.
+* Write a program that receives a **radius** of a circle and calculates its circumference, area and volume of a sphere. You will only need `input()`,`print()`, `str()` and `float()` for casting.
 Hints:
   - Use a variable `PI` and set it to `3.14` instead of using 3.14 every time.
   - Volume of a sphere can be calculated as V = 4/3 * π * r<sup>3</sup>
@@ -129,13 +129,13 @@ polomer = float(input("Zadejte poloměr: "))
 obvod = 2 * PI * polomer
 obsah = PI * polomer ** 2 # ** je mocnina, polomer ** 2 znamená polomer na druhou
 objem = 4 / 3 * PI * polomer ** 3
-print("Obvod kružnice o poloměru " + polomer + " je " + obvod)
-print("Obsah kruhu o poloměru " + polomer + " je " + obsah)
-print("Objem koule o poloměru " + polomer + " je " + objem)
+print("Obvod kružnice o poloměru " + str(polomer) + " je " + str(obvod))
+print("Obsah kruhu o poloměru " + str(polomer) + " je " + str(obsah))
+print("Objem koule o poloměru " + str(polomer) + " je " + str(objem))
 ```
 
 ### Minutes to hours and minutes
-* Write a program that receives a number representing **minutes**. The goal is to convert minutes into **hours and minutes**. You will need **input(), print(), int()** for casting. You will further need these operators: integer division (`//`) and modulo (`%`) (modulo calculates the reminder after division, eg. `5%3 = 2` - the remainder after dividing `5` by `3` is `2`)
+* Write a program that receives a number representing **minutes**. The goal is to convert minutes into **hours and minutes**. You will need `input()`,`print()`, `str()` and `int()` for casting. You will further need these operators: integer division (`//`) and modulo (`%`) (modulo calculates the reminder after division, eg. `5%3 = 2` - the remainder after dividing `5` by `3` is `2`)
 
 ```python
 POCET_MINUT_V_HODINE = 60 # definování konstanty - proměnná, která se nemění
@@ -144,7 +144,7 @@ minuty = int(input("Zadejte počet minut: "))
 pocet_hodin = minuty // POCET_MINUT_V_HODINE # celočíselné dělení
 pocet_minut = minuty % POCET_MINUT_V_HODINE # zbytek po dělení
 
-print(minuty + " minut = " + pocet_hodin + " hodin a " + pocet_minut + " minut")
+print(minuty + " minut = " + str(pocet_hodin) + " hodin a " + str(pocet_minut) + " minut")
 ```
 
 
