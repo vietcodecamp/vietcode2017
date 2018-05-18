@@ -131,6 +131,7 @@ print(odpoved)
 
 ### Saving inputs into a list
 * Write a script that asks for 3 names, saves them to a list and prints it
+
 ```python
 jmena = [] # empty list
 jmena.append(input("Napiš první jméno: "))
@@ -156,14 +157,16 @@ print(x[5:8]) # 's k'
 
 ### Upper Case
 * Write a script that yells back at you whatever you tell it. You will use `upper()`
+
 ```python
 vstup = input("Co delas ")
 odpoved = vstup.upper() + "!!!"
 print(odpoved)
 ```
+
 ### X-mass tree
 * Draw a x-mass tree. Use a single print function and a string concatenation method
-* Note, we will improve this using loops later on
+  * Note, we will improve this using loops later on
 It should look like this:
 
 ```
@@ -181,7 +184,7 @@ print(prostredni_hvezda + "  ***\n" + " *****\n" + "*******\n" + prostredni_hvez
 
 ### Rectangle
 * Draw a 4 x 4 empty rectangle using string concatenation and \n
-* Note, we will also improve this using loops later on
+  * Note, we will also improve this using loops later on
 
 ```
 ****
