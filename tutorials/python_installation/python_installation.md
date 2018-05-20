@@ -9,20 +9,27 @@ Pokud máš novější počítač, nejspíš bude tvůj windows 64-bit, proto st
 
 ### Instalace
 
-Jedná se o normálni instalátor. Na začátku nezapomeň zaškrtnout "Add Python 3.6 to PATH"
+Jedná se o normálni instalátor. Na začátku nezapomeň zaškrtnout "Add Python 3.6 to PATH" a zvol možnost "Install now", která zahrnuje editor IDLE, pip a dokumentaci.
+
 ![Alt Text](https://github.com/nguyeho7/vietcode2018/blob/master/tutorials/python_installation/python_installer.png "Python installer")
 
 
 ### Ověření funkčnosti
 Spustíme program IDLE
+
 ![Alt Text](https://github.com/nguyeho7/vietcode2018/blob/master/tutorials/python_installation/IDLE.png "IDLE icon")
 
-Otevře se okno Python Shell. Zkusíme napsat první příkaz
-'''
+Otevře se okno Python Shell. Zkusíme napsat první příkaz:
+
+```
 print("Hello World!")
-'''
+```
+
 Python by nás měl pozdravit
+
 ![Alt Text](https://github.com/nguyeho7/vietcode2018/blob/master/tutorials/python_installation/python_shell_test.png "Hello World")
+
+Pokud se podařilo, pak je instalace hotová
 
 ## macOS
 ### Stažení a instalace
