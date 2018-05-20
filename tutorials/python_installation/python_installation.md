@@ -8,10 +8,21 @@ Jdi na [stahovací stránku](https://www.python.org/downloads/) Pythonu a stáhn
 Pokud máš novější počítač, nejspíš bude tvůj windows 64-bit, proto stáhni 64-bit verzi. Kdyby sis chtěl být jistý, koukni se do Systémových informací (__Start__ -> vyhledat "Systém" a otevřít "Systémové informace") a pod údajem o procesoru a RAM uvidíš tvůj typ operačního systému (32-bit nebo 64-bit).
 
 ### Instalace
+
 Jedná se o normálni instalátor. Na začátku nezapomeň zaškrtnout "Add Python 3.6 to PATH"
+! [python installer] (https://github.com/nguyeho7/vietcode2018/blob/master/tutorials/python_installation/python_installer.png)
+
 
 ### Ověření funkčnosti
+Spustíme program IDLE
+! [idle icon] (https://github.com/nguyeho7/vietcode2018/blob/master/tutorials/python_installation/IDLE.png)
 
+Otevře se okno Python Shell. Zkusíme napsat první příkaz
+'''
+print("Hello World!")
+'''
+Python by nás měl pozdravit
+! [hello_world] (https://github.com/nguyeho7/vietcode2018/blob/master/tutorials/python_installation/python_shell_test.png)
 
 ## macOS
 ### Stažení a instalace
