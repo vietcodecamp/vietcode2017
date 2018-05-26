@@ -106,7 +106,7 @@ jidla = []
 for i in range(1, 6):
   jidla.append(input("Zadej tvoje {}. nejoblíbenější jídlo: ".format(i)))
 
-print("Tvoje nejloblíbenější jídla jsou: " + ', '.join(jidla))  
+print("Tvoje nejoblíbenější jídla jsou: " + ', '.join(jidla))  
 ```
 ## Average from input
 * Calculate the average shoe size in your class. First ask for the number of students, then get all of their sizes. Then sum and divide them to get the average
@@ -143,14 +143,14 @@ ctverec = ""
 for i in range(a):
   if i == 0:
     ctverec += horni_hrana
-  elif i == a - 1:
+  elif i == a - 1: #  disgusting
     ctverec += dolni_hrana
   else:
     ctverec += bocni_hrana
 
 print(ctverec)  
 ```
-* Shorter version without loops
+* Shorter version without loops and multiplication
 ```python
 a = int(input("Zadej délku strany čtverce: "))
 plna_hrana = "*" * a
