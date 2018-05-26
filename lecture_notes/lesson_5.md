@@ -42,3 +42,29 @@ prumer = soucet_velikosti_bot / pocet_studentu
 print("Průměrná velikost bot je {}".format(prumer))  
 ```
 
+# Extra
+* This lesson would be suitable for a programmer interview task (ideally coded by the lecturers). Most programmer inteviews are on data structures such as trees and maps which are covered during the first semester at University. These questions are from actual interviews. Sadly, the more interesting ones involve objects.
+* A programmer interview has 1 to 3 tasks. You solve the task while commenting on it. Afterwards, you discuss the time complexity with your interviewer. Finally, you can ask the interviewer questions about the company. The whole process takes roughly an hour.
+
+## Anagramy
+* Napis metodu, co zjisti, jestli jsou dva retezce anagramy nebo ne.
+
+## Unikat
+* Napis metodu, co zjisti, jestli se v retezci nevyskytuje nejaky znak dvakrat. BONUS: bez pouziti datove struktury.
+
+## prefix tree (my interview!! Dacos challenge)
+* Napiste datovou strukturu reprezentujici prefixovy strom. (taky trie)
+* Prefixovy strom uklada retezec s pomoci uzlu. V kazdem uzlu je jeden znak (prefix) a reference na zbytek slova. Konec nejakeho slova zjistite flagem true.
+```
+ahoj ->
+
+start -> a -> h -> o -> j
+```
+* V prefixovem slove tak muzete mit vic slov
+```
+start -> a -> h -> o -> j(stop) -> k -> y 
+      \        \
+       \        > a (stop)
+        > h - > e - > j
+```
+* Diskutujte proc to je vyhodne a co se s tim da delat
