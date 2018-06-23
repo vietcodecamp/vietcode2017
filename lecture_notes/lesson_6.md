@@ -7,31 +7,36 @@
 
 ## Exercises
 * Import the time library, read up the sleep() and time() function
-* Create a script that counts down 4 seconds and lets the user write "The quick brown fox jumps over the lazy dog"
+* Create a script that counts down 3 seconds and lets the user write "the quick brown fox jumps over the lazy dog"
 * Afterwards, it validates the input (you can do both == compare or loop through the string
 * finally, it tells the time elapsed between start of the input and when user wrote the new line, calculate words per minute
 ```python
-# @Andrej
 import time
 
-def countdown(n=4):
+def countdown(n=3):
     for x in range(n, 0, -1):
         time.sleep(1)
-        print("{} seconds remaining".format(n))
-    print("NOW")
+        print("{} ...".format(x))
+    print("GO!")
 
 def initial_message():
-    print("Please write the \"quick brown fox jumps over the lazy dog\" when the countdown ends")
+    print("Please write the \"the quick brown fox jumps over the lazy dog\" when the countdown ends")
     print("all lowercase")
 
 def time_input():
-     correct_text = "quick brown fox jumps over the lazy dog"
+     correct_text = "the quick brown fox jumps over the lazy dog"
      start = time.time()
      text = input()
      end = time.time()
      if text == correct_text:
          duration = end - start
-         print("Correct!, you took {} seconds!".format(duration))
+         print("Correct! It took you {} seconds!".format(duration))
+     else:
+         print("Incorrect! You entered a wrong text.")
+
+initial_message()
+countdown()
+time_input()
 ```
 
 # Hackaday #2

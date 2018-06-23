@@ -26,13 +26,13 @@ while True:
 
 # Exercises
 ## Average from input
-* Predtim jsme vytvorili skript, co se uzivatele zepta na pocet lidi a pak ve for loopu ziska hodnoty. Zmente to na while loop s tim, ze bude skript sbirat data dokud nereknete "STOP", pak spocita prumer jako predtim
+* Předtím jsme vytvořili skript, který se uživatele zeptá na počet lidí a pak ve for smyčce získá hodnoty. Změňte for smyčku za while smyčku s tím, že bude skript sbírat data dokud nebude na vstupu "STOP". Po zadání stop se spočítá průměr jako předtím.
 
 ```python
 soucet_velikosti_bot = 0
 pocet_student = 0
-While true
-    vstup = input("Zadej velikost bot nebo \"STOP\": ")
+while true
+    vstup = input("Zadej velikost bot nebo \"STOP\" pro spočítání průměru: ")
     if vstup == "STOP":
         break
     else:
@@ -62,7 +62,7 @@ start -> a -> h -> o -> j
 ```
 * V prefixovem slove tak muzete mit vic slov
 ```
-start -> a -> h -> o -> j(stop) -> k -> y 
+start -> a -> h -> o -> j(stop) -> k -> y
       \        \
        \        > a (stop)
         > h - > e - > j
