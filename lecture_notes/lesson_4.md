@@ -138,15 +138,12 @@ a = int(input("Zadej délku strany čtverce: "))
 dolni_hrana = "*" * a
 horni_hrana = dolni_hrana + "\n"
 bocni_hrana = "*" + " " * (a - 2) + "*\n"
-ctverec = ""
 
-for i in range(a):
-  if i == 0:
-    ctverec += horni_hrana
-  elif i == a - 1: #  disgusting
-    ctverec += dolni_hrana
-  else:
+ctverec = horni_hrana
+for i in range(1, a - 1):
     ctverec += bocni_hrana
+
+ctverec += dolni_hrana
 
 print(ctverec)  
 ```
