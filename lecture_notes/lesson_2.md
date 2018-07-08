@@ -27,13 +27,20 @@ x = len("ahoj") # x = 4
 * If we need to change the case of the string, we use `upper()` for uppercase or `lower()` for lowercase at the end of the string
 * This is different from `len()` is a function that takes any list or string and tells you its length
 * `.upper()` and `.lower()` are functions specific for a given string
+
+
+ ![alt text](https://orig00.deviantart.net/dd22/f/2017/151/5/8/mocking_spongebob_meme_by_thevideogameteen-dbb5ar0.jpg "Logo Title Text 1")
+
+
 ```python
-x = "malym"
-x_caps = x.upper() # here we say: take x, change it's characters to upper case, save the result to x_caps
-print(x_caps)
-x_zase_malym = x_caps.lower()
-print(x_zase_malym)
+my_brain_says = "aNd ThE DiSheS beTtEr Be CleA-"
+what_should_i_say = x.lower() # here we say: take the sentence, change it's characters to lower case, save the result to a new variable
+print(what_should_i_say)
+
+# result: "and the dishes better be clea-"
 ```
+No violence needed...
+
 * We can add multiple strings together as seen in Lesson 1
 ```python
 a = "Wingardium"

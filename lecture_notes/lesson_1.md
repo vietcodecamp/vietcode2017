@@ -9,6 +9,8 @@
 * You all are familiar with solving quadratic equations. What is the general cookbook for solving them?
 Try calculating solution for this simple task (to get hands on Python shell):
  
+ ![alt text](https://github.com/nguyeho7/vietcode2018/blob/master/img/quadratic1.png "Logo Title Text 1")
+
 * now try it for:
 
 * still not tired? Go with this one:
@@ -16,8 +18,8 @@ Try calculating solution for this simple task (to get hands on Python shell):
 How about calculating all quadratic equations there is? Introducing...
 
 ### Programming lvl 2: scripts
-* Look at the process of solving the equation. Are there any parts, which you have to type into the calculator every time
-you solve an equation? 
+* Look at the process of solving the equation. Are there steps, which you have to type into the calculator every *(f\*cking)* time *(like a total retard)*
+to solve an equation? 
 * If you guessed the formula for discriminant and the formula for actual solution(s), you were right!
   Those are the *common* part for every solution. We want to write them only once. Imagine solving millins of equations. **Your fingers would fall off!**
 * What are however the symbols, that change with every equation? 
