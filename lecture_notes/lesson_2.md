@@ -1,15 +1,33 @@
 # Lesson 2
-* Lists, again len() and indexing, append, delete, pop
-* Joining lists
-* Strings, len(), concatenation, indexing, upper(), lower(), find()
+**Lesson goal:** At the end of this lesson the learner will understand the concept of strings and lists and how to use them.
+
+## Outline
+1. Strings
+2. Indexing
+3. Functions and methods to use with strings
+4. Lists and their properties
+5. Excercises
+
+## Motivation
+* Your avatar collects magical items throughout the game. How to save them all in your inventory without losing any?
+```python
+inventory = []
+new_item = input("Insert a new inventory item: ")
+inventory.append(new_item)
+new_item = input("Insert a new inventory item: ")
+inventory.append(new_item)
+...
+print(inventory)
+```
 
 ## String
 * We mentioned Strings in the first lesson already
-* We will first go through indexing and then some basic functions
+* String is a data type that stores any sequence of characters - eg. letters, words or even whole sentences.
+* We will first go through indexing and then some basic functions to work with strings.
 
 ### Indexing
 * We can access specific characters in a string
-* Indexes are natural numbers rising from 0
+* Indexes are natural numbers rising from 0.
 * Note, we **cannot** change the value at the given index!!!
 ```python
 x = "Texty text"
@@ -17,7 +35,6 @@ print(x[0]) # prints the 1st character of the string
 x = "chiba"
 x[2] = "y"  # 2 is the 3rd character
 # TypeError: 'str' object does not support item assignment
-
 
 ### Functions and methods
 * If we need the length of a string, we use `len()`
@@ -56,6 +73,8 @@ print(cela_veta)
 ```
 
 ## List
+**Goal:** Store data in one variable instead of multiple variables.
+**Analogy:** Let's take the case with putting a number into a box and passing the box to the machine. What if we want the machine to process hundreds of different numbers? We can pass hundreds of boxes one by one or pass a single box with many little boxes inside for each number.
 * Sometimes we want to have several variables. Instead of creating and naming
 each variable by hand, we can create a list. A list is a variable that contains several values.
 ```python
@@ -63,6 +82,20 @@ x1 = 1
 x2 = 2
 x3 = 3
 my_list = [1,2,3]
+```
+* What do you like more?
+```python
+day1 = "Monday"
+day2 = "Tuesday"
+day3 = "Wednesday"
+day4 = "Thursday"
+day5 = "Friday"
+day6 = "Saturday"
+day7 = "Sunday"
+```
+or
+```python
+days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 ```
 * We access variables in the list using indexing
 * Indexing tells us which value in the list we want.
@@ -72,12 +105,24 @@ my_list = [1,2,3]
 print(my_list[0]) # output first element of the list
 print(my_list[2]) # output the third element of the list
 ```
+* What index does Monday have? What about Sunday? What day is on the index 7? 
+```python
+days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+print(days[7])
+```
 * Lists are very similar to strings. However, unlike strings, it is possible to change each item in a list
 ```python
 my_list = [1,2,3]
 print(my_list)
 my_list[0] = 0
 print(my_list)
+```
+* Anything can be an item in a list, including another list 
+```python
+list_ovoce = ["Jablko", "Hruska", "Pomeranc"]
+list_zelenina = ["Okurka", "Salat", "Mrkev"]
+ovoce_a_zelenina = [list_ovoce, list_zelenina]
+print(ovoce_a_zelenina)
 ```
 * To add to an existing list, we can use `.append()` to add the value to the end
 ```python
@@ -99,12 +144,13 @@ prvni_list = [1,2,3]
 druhy_list = [4,5,6]
 treti_list = prvni_list + druhy_list
 ```
-* Anything can be an item in a list, including another list 
+* Another functions to use with lists are for example .pop(index), .insert(index, data). Try them out:
 ```python
-list_ovoce = ["Jablko", "Hruska", "Pomeranc"]
-list_zelenina = ["Okurka", "Salat", "Mrkev"]
-ovoce_a_zelenina = [list_ovoce, list_zelenina]
-print(ovoce_a_zelenina)
+my_list = [1,2,3]
+my_list.pop(0)
+print(my_list)
+my_list.insert(0,1)
+print(my_list)
 ```
 
 ## Exercises
@@ -143,10 +189,13 @@ print(x[5:8]) # 's k'
 
 ### Fighting a dragon
 * Create a list called 'inventory' for your knight that includes "sword", "puppy", "ice cream", "fancy hat" and 2 more items of your choice.
+* Find the right indexes to get the right item to fight the dragon and save the princess, make a good impression on the princess to fall in love with you and give her a wedding gift.
 ```python
 inventory = ["sword", "puppy", ...]
+print("I fight the dragon with " + inventory[__])
+print("I impress the princess with " + inventory[__])
+print("I give " + inventory[__] + " to her")
 ```
-* Find the right indexes to get the right item to fight the dragon and save the princess, make a good impression on the princess to fall in love with you and give her a wedding gift.
 
 ### Upper Case
 * Write a script that yells back at you whatever you tell it. You will use `upper()`
