@@ -74,6 +74,7 @@ print(cela_veta)
 
 ## List
 **Goal:** Store data in one variable instead of multiple variables.
+
 **Analogy:** Let's take the case with putting a number into a box and passing the box to the machine. What if we want the machine to process hundreds of different numbers? We can pass hundreds of boxes one by one or pass a single box with many little boxes inside for each number.
 * Sometimes we want to have several variables. Instead of creating and naming
 each variable by hand, we can create a list. A list is a variable that contains several values.
