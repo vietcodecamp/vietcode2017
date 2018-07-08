@@ -3,11 +3,64 @@
 * Variables, data types, casting, input, output, arithmetic operators
 * Ideally we would end with each student having a simple script that gets user input and outputs something
 
-## Variables
-* To work with data, a computer needs to store the values somewhere accessible to a human as well. For that we use the '=' operator.
-* Note that `x = 3` doesn't mean "x is equal to 3", but "save the number 3 to the variable x" It's a command, not a statement!
-* We can save constants, strings, but most importantly the results of functions. Note we have to read the text from right to left, as in `x = f(y)` "do this and save the result in x"
-* People tend to want say "this is how the solution should look like" instead of "this is what you should do"
+
+## Motivational example 
+### Programming lvl 1: calculator
+* You all are familiar with solving quadratic equations. What is the general cookbook for solving them?
+Try calculating solution for this simple task (to get hands on Python shell):
+ 
+* now try it for:
+
+* still not tired? Go with this one:
+
+How about calculating all quadratic equations there is? Introducing...
+
+### Programming lvl 2: scripts
+* Look at the process of solving the equation. Are there any parts, which you have to type into the calculator every time
+you solve an equation? 
+* If you guessed the formula for discriminant and the formula for actual solution(s), you were right!
+  Those are the *common* part for every solution. We want to write them only once. Imagine solving millins of equations. **Your fingers would fall off!**
+* What are however the symbols, that change with every equation? 
+
+  Right, the coefficients of the equation. Now tell me, are those coefficients all we need for solution?
+  
+  The answers is yes! Those 3 numbers are really what we need to solve any quadratic equation! 
+  
+  How do we do it? Well as we said before, we write down the common parts:
+
+```python
+D = b**2 - 4*a*c 
+
+x1 = (-b + math.sqrt(D)) / (2*a)
+x2 = (-b - math.sqrt(D)) / (2*a)
+```
+* And now, if we substitute for *a*, *b* and *c* to get solutions. Try it for our first example:
+
+```python
+a = 5
+b = 6
+c = 1
+
+D = b**2 - 4*a*c 
+
+x1 = (-b + math.sqrt(D)) / (2*a)
+x2 = (-b - math.sqrt(D)) / (2*a)
+
+print(x1)
+print(x2)
+```
+There you go - solving (almost) every quadratic quation there is. No typos, no numeric errors. Oh, how I wish I had this during my math exams....
+
+## Some terms...
+### Variables
+* In the previous example we used a sign " = " to tell the computer, what  *a*, *b* and *c* are. Notice the word **tell**. The difference of meaning of " = " in programming and in math
+is better seen on an example:
+* Note that `x = 3` doesn't mean *"x is equal to 3"*, but it means: *"Computer, I order you to take number 3 and save it to the variable x. AND DO IT NOW!!!"* 
+
+  In other words, it's a command, not a statement!
+* We can also save strings (words) too: `my_cat_name = "Khajit"`, but most importantly the results of functions: `x = sqrt(y)` Note we have to read the text from right to left: 
+ *"Computer, do the square root of whatever is in y and save the result in x. NO TALKING BACK!!"*
+* People tend to want to say "this is how the solution should look like" instead of "this is what you should do". In other words - get used to commanding
 * Reading code exercise
 
 ```python
