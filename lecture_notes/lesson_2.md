@@ -3,6 +3,51 @@
 * Joining lists
 * Strings, len(), concatenation, indexing, upper(), lower(), find()
 
+## String
+* We mentioned Strings in the first lesson already
+* We will first go through indexing and then some basic functions
+
+### Indexing
+* We can access specific characters in a string
+* Indexes are natural numbers rising from 0
+* Note, we **cannot** change the value at the given index!!!
+```python
+x = "Texty text"
+print(x[0]) # prints the 1st character of the string
+x = "chiba"
+x[2] = "y"  # 2 is the 3rd character
+# TypeError: 'str' object does not support item assignment
+
+
+### Functions and methods
+* If we need the length of a string, we use `len()`
+```python
+x = len("ahoj") # x = 4
+```
+* If we need to change the case of the string, we use `upper()` for uppercase or `lower()` for lowercase at the end of the string
+* This is different from `len()` is a function that takes any list or string and tells you its length
+* `.upper()` and `.lower()` are functions specific for a given string
+```python
+x = "malym"
+x_caps = x.upper() # here we say: take x, change it's characters to upper case, save the result to x_caps
+print(x_caps)
+x_zase_malym = x_caps.lower()
+print(x_zase_malym)
+```
+* We can add multiple strings together as seen in Lesson 1
+```python
+a = "Wingardium"
+b = "Leviosa"
+zaklinadlo = a + " " + b + "!"
+```
+* We use this feature often when printing output to the user (also seen in Lesson 1)
+```python
+pocet_knedliku = 8
+print("Chtel bych gulas s " + str(pocet_knedliku) + " knedliky")
+cela_veta = "Chtel bych gulas s " + str(pocet_knedliku) + " knedliky"
+print(cela_veta)
+```
+
 ## List
 * Sometimes we want to have several variables. Instead of creating and naming
 each variable by hand, we can create a list. A list is a variable that contains several values.
@@ -19,6 +64,13 @@ my_list = [1,2,3]
 my_list = [1,2,3]
 print(my_list[0]) # output first element of the list
 print(my_list[2]) # output the third element of the list
+```
+* Lists are very similar to strings. However, unlike strings, it is possible to change each item in a list
+```python
+my_list = [1,2,3]
+print(my_list)
+my_list[0] = 0
+print(my_list)
 ```
 * To add to an existing list, we can use `.append()` to add the value to the end
 ```python
@@ -40,72 +92,12 @@ prvni_list = [1,2,3]
 druhy_list = [4,5,6]
 treti_list = prvni_list + druhy_list
 ```
-
-## String
-* We mentioned Strings in the first lesson already
-* In many languages we can see strings as a list of characters
-* In python, it is very similar (you will see how we can have both indexing and len), but also has some additional things that makes it easier to work with.
-* We will first go through the functions and then go through indexing
-
-### Functions and methods
-* If we need the length of a string, we use `len()` again! Yay!!!!!
+* Anything can be an item in a list, including another list 
 ```python
-x = len("ahoj") # x = 4
-```
-* If we need to change the case of the string, we use `upper()` for uppercase or `lower()` for lowercase at the end of the string
-* This is different from `len()` is a function that takes any list or string and tells you its length
-* `.upper()` and `.lower()` are functions specific for a given string
-```python
-x = "malym"
-x_caps = x.upper() # here we say: take x, change it's characters to upper case, save the result to x_caps
-print(x_caps)
-x_zase_malym = x_caps.lower()
-print(x_zase_malym)
-```
-* Can you append to a string? Sadly not! Booo!
-
-### Indexing
-* Again, we can access specific characters in a string
-* Note, we **cannot** change the value at the given index!!!
-```python
-x = "Texty text"
-# Using indices just like in lists!
-print(x[0]) # prints "T"
-x = "chiba"
-x[2] = "y"  # 2 is the 3rd character
-# TypeError: 'str' object does not support item assignment
-```
-
-## Escaping characters
-* We encapsulate strings in `""`, so how do we write `""` inside a string? We use escaping. By adding the `\` sign, the quote sign loses it's power and becomes a regular character.
-* Alternatively, use single quotes
-
-```python
-x = "Petr rekl \"Ahoj.\""
-y = 'Maria mu odpovedela "Cauky"'
-```
-
-* If you want to make a new line in python, you have to use a special combination of charaters, `\n`
-* How would you print "\n"? Why, using escaping again! The escape character always modified the next character
-
-```python
-print("\\n")
-```
-
-## Formatting intro
-* Let's asume we calculated circumference and area of a circle and we wan't to print the result to the user. The most common way of doing this is the following:
-  * basic concatenation
-```python
-print("Obvod kružnice je " + str(obvod) + " a obsah kruhu je " + str(obsah) )
-```
-  * using `format` function
-```python
-print("Obvod kružnice je {} a obsah kruhu je {}".format(obvod, obsah))
-```
-  * using formatted string
-```python
-# note the "f" in front of the string
-print(f"Obvod kružnice je {obvod} a obsah kruhu je {obsah}")
+list_ovoce = ["Jablko", "Hruska", "Pomeranc"]
+list_zelenina = ["Okurka", "Salat", "Mrkev"]
+ovoce_a_zelenina = [list_ovoce, list_zelenina]
+print(ovoce_a_zelenina)
 ```
 
 ## Exercises
@@ -115,15 +107,6 @@ print(f"Obvod kružnice je {obvod} a obsah kruhu je {obsah}")
 vstup = input("Napis text ")
 pocet_znaku = len(vstup)
 odpoved = "Napsal jsi" + str(pocet_znaku) +  "znaku!"
-print(odpoved)
-```
-
-### Quotes in string
-* Write a script that asks the user for input, then repeats the input in quotes like this: __"You said " ", am I right?"__
-  * Note we want the **quote marks inside**!
-```python
-vstup = input("Napis text ")
-odpoved = 'You said "' + vstup + '", am I right?'
 print(odpoved)
 ```
 
@@ -150,6 +133,13 @@ print(x[3]) # 't'
 print(x[6]) # ' '
 print(x[5:8]) # 's k'
 ```
+
+### Fighting a dragon
+* Create a list called 'inventory' for your knight that includes "sword", "puppy", "ice cream", "fancy hat" and 2 more items of your choice.
+```python
+inventory = ["sword", "puppy", ...]
+```
+* Find the right indexes to get the right item to fight the dragon and save the princess, make a good impression on the princess to fall in love with you and give her a wedding gift.
 
 ### Upper Case
 * Write a script that yells back at you whatever you tell it. You will use `upper()`
@@ -189,18 +179,9 @@ print(prostredni_hvezda + "  ***\n" + " *****\n" + "*******\n" + prostredni_hvez
 ```python
 radek = "****"
 sloupec = "*  *"
-vysledek = "{}\n{}\n{}\n{}".format(radek, sloupec, sloupec, radek)
+vysledek = radek + "\n" + sloupec + "\n" + sloupec + "\n" + radek
+print(vysledek)
 ```
-
-### Single quotes and escaping
-* print out `Alenka řekla: "Běž mi koupit rohlíky, Honzo."` using single quotes AND escaping
-```python
-print( "Alenka řekla: \"Běž mi koupit rohlíky, Honzo.\"")
-print( 'Alenka řekla: "Běž mi koupit rohlíky, Honzo."')
-```
-## Extras
-* `String.split()` to create a list out of a string
-* `" ".join(list)` to get a string out of a list
 
 # Notes
 * People confuse lists and indexing a lot
