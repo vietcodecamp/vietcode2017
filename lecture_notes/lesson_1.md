@@ -3,82 +3,82 @@
 it to do basic calculations.
 
 ## Outline
+1. Why do we need programming?
+2. Variables
+3. Basic operators
+4. Data Types and Casting
+5. Input and Output (IO)
+6. Exercises
 
-1. Variables
-2. Basic operators
-3. Data Types and Casting
-4. Input and Output (IO)
-5. Exercises
 
-
-## Motivational example
+## Why do we need programming?
+To make life easier! Computers can do a lot for us. Let's show it on this motivational example
 ### Programming lvl 1: calculator
 * You all are familiar with solving quadratic equations. What is the general cookbook for solving them?
 Try calculating solution for this simple task (to get hands on Python shell):
 
- ![quadratic](https://github.com/nguyeho7/vietcode2018/blob/master/img/quadratic1.png "Logo Title Text 1")
+   5x<sup>2</sup> + 6x + 1 = 0
 
 * now try it for:
 
+  10x<sup>2</sup> - 9x + 6 = 0
+ 
 * still not tired? Go with this one:
-
+  
+  -23.12x<sup>2</sup> - 16.09x + 9.88 = 0
+   
 How about calculating all quadratic equations there is? Introducing...
 
 ### Programming lvl 2: scripts
 * Look at the process of solving the equation. Are there steps, which you have to type into the calculator every time
 to solve an equation?
 * If you guessed the formula for discriminant and the formula for actual solution(s), you were right!
-  Those are the *common* part for every solution. We want to write them only once. Imagine solving millins of equations. **Your fingers would fall off!**
+  Those are the *common* part for every solution. We want to write them only once. Imagine solving millions of equations. **Your fingers would fall off!**
 * What are however the symbols, that change with every equation?
 
   Right, the coefficients of the equation. Now tell me, are those coefficients all we need for solution?
 
   The answers is yes! Those 3 numbers are really what we need to solve any quadratic equation!
 
-  How do we do it? Well as we said before, we write down the common parts:
+  How do we do it? Well, as we said before, we write down the common parts:
 
 ```python
+from math import sqrt
+
 D = b**2 - 4*a*c
 
-x1 = (-b + math.sqrt(D)) / (2*a)
-x2 = (-b - math.sqrt(D)) / (2*a)
+x1 = (-b + sqrt(D)) / (2*a)
+x2 = (-b - sqrt(D)) / (2*a)
 ```
-* And now, if we substitute for *a*, *b* and *c* to get solutions. Try it for our first example:
+* And now, if we substitute for *a*, *b* and *c* we get the solutions. Try it for our first example:
 
 ```python
+from math import sqrt
+
 a = 5
 b = 6
 c = 1
 
 D = b**2 - 4*a*c
 
-x1 = (-b + math.sqrt(D)) / (2*a)
-x2 = (-b - math.sqrt(D)) / (2*a)
+x1 = (-b + sqrt(D)) / (2*a)
+x2 = (-b - sqrt(D)) / (2*a)
 
 print(x1)
 print(x2)
 ```
-There you go - solving (almost) every quadratic equation there is. No typos, no numeric errors. Oh, how I wish I had this during my math exams....
-
-
-### Variables
-* In the previous example we used a sign " = " to tell the computer, what  *a*, *b* and *c* are. Notice the word **tell**. The difference of meaning of " = " in programming and in math
-is better seen on an example:
-* Note that `x = 3` doesn't mean *"x is equal to 3"*, but it means: *"Computer, I order you to take number 3 and save it to the variable x. AND DO IT NOW!!!"*
-
-  In other words, it's a command, not a statement!
-* We can also save strings (words) too: `my_cat_name = "Khajit"`, but most importantly the results of functions: `x = sqrt(y)` Note we have to read the text from right to left:
- *"Computer, do the square root of whatever is in y and save the result in x. NO TALKING BACK!!"*
-* People tend to want to say "this is how the solution should look like" instead of "this is what you should do". In other words - get used to commanding
-* Reading code exercise
+There you go - solving (almost) every quadratic equation there is - just change *a*, *b* and *c*. No typos, no numeric errors. Oh, how I wish I had this during my math exams....
 
 ## Variables
 * **Goal**: Store data that can be **reused**
 * **Analogy**: Let's have a box and put a number in it. Then send this box to a machine (function) and the machine will do something with the number (for example calculate logarithm of that number)
-* To work with data, a computer needs to store the values somewhere accessible to a human as well. For that we use the '=' operator.
-* Note that `x = 3` doesn't mean "x is equal to 3", but "save the number 3 to the variable x" It's a command, not a statement!
-* We can save constants, strings, but most importantly the results of functions. Note we have to read the text from right to left, as in `x = f(y)` "do this and save the result in x"
-* People tend to want say "this is how the solution should look like" instead of "this is what you should do"
+
+* In the previous example we used a sign " = " to tell the computer, what  *a*, *b* and *c* are. Notice the word **tell**. This is an difference in meaning from math, which 
+is better seen on an example:
+* `x = 3` in programming doesn't mean *"x is equal to 3"*. It means: *"Computer, I order you to take number 3 and save it to the variable x. AND DO IT NOW!!!"*
+  In other words, it's a command, not a statement!
+* We can also **store** strings (words) too: `cat = "Khajit"`, but most importantly the results of functions: `x = sqrt(y)` Note we have to read the text from right to left:
+ *"Computer, do the square root of whatever is in y and save the result in x."*
 * Variable names should be meaningful.
 * If the variable name is described by more words, the variable naming convention in python is snake_case. It means that the words are "separated" by an underscore `_` for example `number_of_students` (`numberofstudents` is much harder to read). Other languages use pascalCase (Java, Swift etc.). For more conventions and details visit [wiki](https://en.wikipedia.org/wiki/Naming_convention_(programming)).
 
@@ -104,21 +104,6 @@ a = 3 # the length of leg 'a'
 b = 4 # the length of leg 'b'
 # What is the area of a square created on hypotenuse 'c' ?
 area = a * a + b * b
-```
-
-Quadratic equation:
-* Lets say we have a quadratic formula ax<sup>2</sup> + bx + c = 0 and we want to get the solution
-
-```python
-a =  3
-b = -11
-c = 6
-
-discriminant = (b ** 2 - 4*a*c) ** 0.5 # ** 0.5 - power to 1/2 is the square root
-x1 = (-b  + discriminant) / (2 * a)
-x2 = (-b  - discriminant) / (2 * a)
-print(x1)
-print(x2)
 ```
 
 Swap:
