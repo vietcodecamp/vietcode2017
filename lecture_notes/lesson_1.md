@@ -17,16 +17,16 @@ To make life easier! Computers can do a lot for us. Let's show it on this motiva
 * You all are familiar with solving quadratic equations. What is the general cookbook for solving them?
 Try calculating solution for this simple task (to get hands on Python shell):
 
- ![quadratic](https://github.com/nguyeho7/vietcode2018/blob/master/img/quadratic1.png "Logo Title Text 1")
+   5x<sup>2</sup> + 6x + 1 = 0
 
 * now try it for:
 
- ![quadratic2](https://github.com/nguyeho7/vietcode2018/blob/master/img/quadratic2.png "Logo Title Text 1")
-
+  10x<sup>2</sup> - 9x + 6 = 0
+ 
 * still not tired? Go with this one:
-
- ![quadratic3](https://github.com/nguyeho7/vietcode2018/blob/master/img/quadratic3.png "Logo Title Text 1")
-
+  
+  -23.12x<sup>2</sup> - 16.09x + 9.88 = 0
+   
 How about calculating all quadratic equations there is? Introducing...
 
 ### Programming lvl 2: scripts
@@ -43,7 +43,7 @@ to solve an equation?
   How do we do it? Well, as we said before, we write down the common parts:
 
 ```python
-import math
+from math import sqrt
 
 D = b**2 - 4*a*c
 
@@ -53,7 +53,7 @@ x2 = (-b - sqrt(D)) / (2*a)
 * And now, if we substitute for *a*, *b* and *c* we get the solutions. Try it for our first example:
 
 ```python
-import math
+from math import sqrt
 
 a = 5
 b = 6
