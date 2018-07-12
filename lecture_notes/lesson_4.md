@@ -1,10 +1,11 @@
 # Lesson 4
-*Lesson Goal:* After this lesson the learner will be able to use a construct (`for`- loop) for repeating a block of code and iterating though a list.
+**Lesson goal:** After this lesson the learner will be able to use a construct (`for`- loop) for repeating a block of code and iterating though a list.
 
 # Outline
 1. Repeating A block of code
 2. Inner loop
 3. List iteration
+4. Exercises
 
 # Repeating code several times
 **Goal:** Repeat a block of code without duplicating it.
