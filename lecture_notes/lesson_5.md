@@ -15,12 +15,23 @@
 When the condition is `False` in time of checking (the beginning of every iteration), the code inside of the loop will not be executed.
 
 **Example:**
+*"When you brush your teeth, you don't stop after, say, 200 strokes right? (Or at least most of us don't). You stop when you feel the teeth are clean. It can be after 100 strokes, or it can be after 400 strokes (e.g. when you go out for a date with your crush ;) "*
+
+
+Now let's go more programatic:
+
+*Imagine a robot, which brushes the teeth for you. He has a single command `BRUSH-ONCE`. If you programmed him to use while-loop, he would do the following:*
+  1. *He checks, if your teeth still dirty*
+  2. *If they are, he executes the command BRUSH-ONCE and returns to point 1.*
+  3. *If they are not dirty anymore, his job is done and he shuts down. (exiting the loop)*
+
+
 ```python
-from random import random
-# Flip a coin until it is not heads
-is_heads = True
-while is_heads:
-  is_heads = random() > 0.5 # random() returns a random number between 0.0 and 1.0
+teeth_are_dirty = True
+while teeth_are_dirty:
+  teeth_are_dirty = brush_once() returns a random number between 0.0 and 1.0
+
+print('Teeth are now clean.')
 
 ```
 
@@ -28,6 +39,29 @@ while is_heads:
 * One of the obvious way is to set the condition to `False` inside the loop so that the next iteration will not happen. But consider the following problem.
 * **Problem:** Sometimes you need to decide inside the loop whether to continue in the loop or not.
 * **Solution:** We can use a `break` statement to exit the loop.
+
+* **Analogy:**
+
+*Imagine you have a company, that sells a wood chopping robots. They work this way:*
+
+```
+while the pile of wood logs is not empty
+  1. take a log from a pile
+  2. place it on the cutting surface
+  3. chop
+```
+*One day, a customer calls you, that the robot injured one of his employees and demands you include some safety-measure inside your robot. So you re-program him and he does:*
+
+```
+while the pile of wood logs is not empty
+   1. take a log from a pile
+   2. place it on the cutting surface
+   3. if human is nearby
+         -> break job
+   4. if clear, then chop
+```
+
+*You see, that the break is mostly used when the round if iteration should not be completed and the loop must be exited immediately. The use of `break` in programs is the same as in this "real-world" example - as a safety measure.*
 
 **Example:** Write a program that takes coefficient of a quadratic equation ax<sup>2</sup> + bx + c = 0 and computes the solution. Stop the program when the quadratic coefficient `a` is zero.
 
@@ -59,8 +93,18 @@ print('The script terminated.')
 ```
 
 # Skipping the some code in a loop
-* **Problem:** Sometimes you want to skip some code inside the loop but not exit the loop. For example.
+* **Problem:** Sometimes you want to skip some code inside the loop but not exit the loop. 
 * **Solution:** Use `continue` to skip the code after continue and start a new iteration.
+
+*The use of the continue can be shown on a tax administration office worker. People approach with their tax forms and the official processes them. He/she does the job this way:*
+
+```
+While there are people waiting in a queue, do:
+   1. ask them to hand in the form and their ID
+   2. check if the form is valid 
+   3. if not, skip that person by calling "Next!" (or if she/he was a computer by calling "Continue!")
+   4. process the form if it is valid
+```
 
 **Example:** Modify the previous program to warn the user when the discriminant is negative
 
@@ -96,6 +140,9 @@ print('The script terminated.')
 
 ```
 
+* `break` and `continue` seem to do the same thing. But imagine this - what would happen, if you you replaced `break` with `continue` in the previous log-chopping-robot example?
+This the crucial difference between those two commands
+
 * `break` and `continue` can also be used in `for` loops.
 
 **Summary:** `break` exits the most inner loop and `continue` just skips the code after and a new iteration begins (if there is one).
@@ -124,6 +171,14 @@ while True:
 prumer = soucet_velikosti_bot / pocet_studentu
 print("Průměrná velikost bot je " + prumer
 ```
+
+## Dacos casino
+In 10 years, Dacos realizes teaching students programming is not profitable so he decides to open a casino instead. 
+There will a game, in which you play dices against Dacos himself. The rules are simple. 
+
+*Each of you rolls 3 dices and the greater sum wins (you can also extend the rules by adding bonuses for same-number combos).*
+*A buy-in for each round is 10CZK. You take all your savings (100CZK) and face the owner with one goal - you either leave the casino with double of your savings, or with no money left*
+*Run your script several times. Did you rip Dacos off, or did he rip you? How many rounds did you have to play?*
 
 # Extra
 * This lesson would be suitable for a programmer interview task (ideally coded by the lecturers). Most programmer interviews are on data structures such as trees and maps which are covered during the first semester at University. These questions are from actual interviews. Sadly, the more interesting ones involve objects.
