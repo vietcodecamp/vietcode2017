@@ -22,11 +22,11 @@ Try calculating solution for this simple task (to get hands on Python shell):
 * now try it for:
 
   10x<sup>2</sup> - 9x + 6 = 0
- 
+
 * still not tired? Go with this one:
-  
+
   -23.12x<sup>2</sup> - 16.09x + 9.88 = 0
-   
+
 How about calculating all quadratic equations there is? Introducing...
 
 ### Programming lvl 2: scripts
@@ -73,7 +73,7 @@ There you go - solving (almost) every quadratic equation there is - just change 
 * **Goal**: Store data that can be **reused**
 * **Analogy**: Let's have a box and put a number in it. Then send this box to a machine (function) and the machine will do something with the number (for example calculate logarithm of that number)
 
-* In the previous example we used a sign " = " to tell the computer, what  *a*, *b* and *c* are. Notice the word **tell**. This is an difference in meaning from math, which 
+* In the previous example we used a sign " = " to tell the computer, what  *a*, *b* and *c* are. Notice the word **tell**. This is an difference in meaning from math, which
 is better seen on an example:
 * `x = 3` in programming doesn't mean *"x is equal to 3"*. It means: *"Computer, I order you to take number 3 and save it to the variable x. AND DO IT NOW!!!"*
   In other words, it's a command, not a statement!
@@ -225,66 +225,12 @@ print(x) # print takes the parameter x and prints it on the console
 
 # Input takes a optional parameter for a user prompt, improving usability.
 # Explain what is a function parameter.
-y = input("Zadejte prosim cislo")
+y = input("Please enter a number")
 ```
 
 ## Exercises
-
-### Retirement
-* Write a program that receives your age and tells you **how many years** you have left **before you retire**. (The age of retirement should be **65**.
-You will only need `input()`, `print()`, `int()`, `str()` and `float()` for casting
-
-```python
-# expected output at this point
-# explain how to divide the program into steps
-vek = input("Kolik je ti let? ")
-let_do_duchodu = 65 - int(vek)
-odpoved = "Zbyva ti " + str(let_do_duchodu) + " let do duchodu!"
-print(odpoved)
-```
-
-### Body Mass Index
-* Write a program asks you for your **weight and height** and calculates your **BMI**. Lookup the BMI formula on wikipedia. Use meters instead of centimeters
-You will only need `input()`, `print()`, and `float()` for casting
-
-```python
-# expected output at this point
-# explain how to divide the program into steps
-vaha = float(input("Kolik vazis? (v kg)"))
-vyska = float(input("Kolik meris? (v metrech)"))
-bmi = vaha / vyska ** 2
-print("Tvé BMI je " + str(bmi))
-```
-### Circle
-* Write a program that receives a **radius** of a circle and calculates its circumference, area and volume of a sphere. You will only need `input()`, `print()`, `str()` and `float()` for casting.
-Hints:
-  - Use a variable `PI` and set it to `3.14` instead of using 3.14 every time.
-  - Volume of a sphere can be calculated as V = 4/3 * π * r<sup>3</sup>
-
-```python
-PI = 3.14 # definování konstanty - proměnná, která se nemění
-polomer = float(input("Zadejte poloměr: "))
-obvod = 2 * PI * polomer
-obsah = PI * polomer ** 2 # ** je mocnina, polomer ** 2 znamená polomer na druhou
-objem = 4 / 3 * PI * polomer ** 3
-print("Obvod kružnice o poloměru " + str(polomer) + " je " + str(obvod))
-print("Obsah kruhu o poloměru " + str(polomer) + " je " + str(obsah))
-print("Objem koule o poloměru " + str(polomer) + " je " + str(objem))
-```
-
-### Minutes to hours and minutes
-* Write a program that receives a number representing **minutes**. The goal is to convert minutes into **hours and minutes**. You will need `input()`, `print()`, `str()` and `int()` for casting. You will further need these operators: integer division (`//`) and modulo (`%`) (modulo calculates the reminder after division, eg. `5%3 = 2` - the remainder after dividing `5` by `3` is `2`)
-
-```python
-POCET_MINUT_V_HODINE = 60 # definování konstanty - proměnná, která se nemění
-
-minuty = int(input("Zadejte počet minut: "))
-pocet_hodin = minuty // POCET_MINUT_V_HODINE # celočíselné dělení
-pocet_minut = minuty % POCET_MINUT_V_HODINE # zbytek po dělení
-
-print(minuty + " minut = " + str(pocet_hodin) + " hodin a " + str(pocet_minut) + " minut")
-```
-
+* [Start](./Exercises/lesson_1_start.md)
+* [Finished](../Exercises/lesson_1_finished.md)
 
 # Notes
 Add to list of required functions to each assignment
