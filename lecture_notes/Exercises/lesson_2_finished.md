@@ -1,5 +1,6 @@
 # Exercises
-
+* [Start](./Exercises/lesson_3_start.md)
+* [Finished](../Exercises/lesson_4_finished.md)
 
 ## Input length
 * Write a script that reads the input of a user and tells him how many characters he wrote
