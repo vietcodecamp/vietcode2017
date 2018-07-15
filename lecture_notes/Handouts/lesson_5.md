@@ -93,7 +93,7 @@ print('The script terminated.')
 ```
 
 # Skipping the some code in a loop
-* **Problem:** Sometimes you want to skip some code inside the loop but not exit the loop. 
+* **Problem:** Sometimes you want to skip some code inside the loop but not exit the loop.
 * **Solution:** Use `continue` to skip the code after continue and start a new iteration.
 
 *The use of the continue can be shown on a tax administration office worker. People approach with their tax forms and the official processes them. He/she does the job this way:*
@@ -101,7 +101,7 @@ print('The script terminated.')
 ```
 While there are people waiting in a queue, do:
    1. ask them to hand in the form and their ID
-   2. check if the form is valid 
+   2. check if the form is valid
    3. if not, skip that person by calling "Next!" (or if she/he was a computer by calling "Continue!")
    4. process the form if it is valid
 ```
@@ -155,54 +155,5 @@ This the crucial difference between those two commands
 * The main difference is in meaning of the loop. `for` loop is used generally when we know how many times we do the cycle. `while` loop is usually used if you don't know for sure how many times you should repeat the code (see the coin flip example above).
 
 # Exercises
-## Average from input
-* Předtím jsme vytvořili skript, který se uživatele zeptá na počet lidí a pak ve for smyčce získá hodnoty. Změňte for smyčku za `while` smyčku s tím, že bude skript sbírat data dokud nebude na vstupu `"STOP"`. Po zadání stop se spočítá průměr jako předtím.
-
-```python
-soucet_velikosti_bot = 0
-pocet_student = 0
-while True:
-    vstup = input("Zadej velikost bot nebo \"STOP\" pro spočítání průměru: ")
-    if vstup == "STOP":
-        break
-    else:
-        soucet_velikosti_bot += float(vstup))
-        pocet_studentu += 1
-prumer = soucet_velikosti_bot / pocet_studentu
-print("Průměrná velikost bot je " + prumer
-```
-
-## Dacos casino
-In 10 years, Dacos realizes teaching students programming is not profitable so he decides to open a casino instead. 
-There will a game, in which you play dices against Dacos himself. The rules are simple. 
-
-*Each of you rolls 3 dices and the greater sum wins (you can also extend the rules by adding bonuses for same-number combos).*
-*A buy-in for each round is 10CZK. You take all your savings (100CZK) and face the owner with one goal - you either leave the casino with double of your savings, or with no money left*
-*Run your script several times. Did you rip Dacos off, or did he rip you? How many rounds did you have to play?*
-
-# Extra
-* This lesson would be suitable for a programmer interview task (ideally coded by the lecturers). Most programmer interviews are on data structures such as trees and maps which are covered during the first semester at University. These questions are from actual interviews. Sadly, the more interesting ones involve objects.
-* A programmer interview has 1 to 3 tasks. You solve the task while commenting on it. Afterwards, you discuss the time complexity with your interviewer. Finally, you can ask the interviewer questions about the company. The whole process takes roughly an hour.
-
-## Anagramy
-* Napis metodu, co zjisti, jestli jsou dva retezce anagramy nebo ne.
-
-## Unikat
-* Napis metodu, co zjisti, jestli se v retezci nevyskytuje nejaky znak dvakrat. BONUS: bez pouziti datove struktury.
-
-## prefix tree (my interview!! Dacos challenge)
-* Napiste datovou strukturu reprezentujici prefixovy strom. (taky trie)
-* Prefixovy strom uklada retezec s pomoci uzlu. V kazdem uzlu je jeden znak (prefix) a reference na zbytek slova. Konec nejakeho slova zjistite flagem true.
-```
-ahoj ->
-
-start -> a -> h -> o -> j
-```
-* V prefixovem slove tak muzete mit vic slov
-```
-start -> a -> h -> o -> j(stop) -> k -> y
-      \        \
-       \        > a (stop)
-        > h - > e - > j
-```
-* Diskutujte proc to je vyhodne a co se s tim da delat
+* [Start](./Exercises/lesson_5_start.md)
+* [Finished](../Exercises/lesson_5_finished.md)
