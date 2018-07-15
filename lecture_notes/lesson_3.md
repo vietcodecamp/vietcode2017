@@ -82,7 +82,7 @@ if 2 < x < 4:
 * There are cases where we need to terminate program earlier because there is no need to process anything further.
 * To exit a program we can use the function `exit()` or `quit()`, with the parameter that determines the exit code (we do not cover exit codes in this course).
 * Note: It's recommended to use `sys.exit()` in programs instead of `exit()` or `quit()`. To see more read the official Python [documentation](https://docs.python.org/3/library/sys.html#sys.exit).
-```
+```python
 login = input("Enter your login name: ")
 if login != "kemper":
     print("The login name: " + login + " is invalid!")
@@ -230,7 +230,7 @@ print(f"{prvni_cislo} {operace} {druhe_cislo} = {vysledek}")
 * if both card number and PIN are correct, check if it's possible to withdraw the requested amount of money from his banking account with the balance 1000 CZK.
 * If it's possible, print to the output "You have withdrawn [amount] CZK and your new balance is [balance] CZK.", otherwise print "Not enough money in the bank account!"
 
-```
+```python
 VALID_CARD_NUMBER = 43-1199223344
 VALID_PIN = 3194
 
@@ -258,13 +258,13 @@ print("You have withdrawn " + str(withdrawal) + " CZK and your new balance is " 
 
 # Notes
 * People often try to put the results of a function in a if statement
-```
+```python
 if x = input() < 3:
 ```
 
 Discourage that
 * People also tend to insert too many statements into one if
-```
+```python
 if x > 4 and 5:
     <code>
 ```
