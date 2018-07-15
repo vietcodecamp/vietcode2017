@@ -1,9 +1,14 @@
 # Lesson 3
+** Lesson goal:** At the end of this lesson the learner will understand the basic concepts of conditionals and logical operators
+
+## Outline
 * Conditionals if, not
-* Boolean algebra intro
+* Comparison operators
+* Logical operators
 * Nested conditions
 * Indentation, function scope (VERY HARD)
 * For any kind of logic or control flow, we need conditional statements.
+* Program termination.
 
 ## Booleans
 * For conditionals, we work with the boolean data type, which is either `True` or `False`
@@ -51,9 +56,9 @@ else:
 print("This should be printed out again")
 ```
 
-## Boolean algebra
+## Logical operators
 * To combine conditions, we can use `and` and `or` operators
-* To invert a truth value use `not`
+* To invert a value use `not`
 * **NOTE** make truth value tables
 
 ## Nested conditions
@@ -71,6 +76,19 @@ if x > 2 and x < 4:
 # OR
 if 2 < x < 4:
     print("x is between 2 and 4")    
+```
+
+## Terminating a program
+* There are cases where we need to terminate program earlier because there is no need to process anything further.
+* To exit a program we can use the function `exit()` or `quit()`, with the parameter that determines the exit code (we do not cover exit codes in this course).
+* Note: It's recommended to use `sys.exit()` in programs instead of `exit()` or `quit()`. To see more read the official Python [documentation](https://docs.python.org/3/library/sys.html#sys.exit).
+```python
+login = input("Enter your login name: ")
+if login != "kemper":
+    print("The login name: " + login + " is invalid!")
+    exit(1)
+password = input("Enter your password: ")
+print("Your password is obsolete. Please change your password!")
 ```
 
 ## Exercises
@@ -205,25 +223,48 @@ print(f"{prvni_cislo} {operace} {druhe_cislo} = {vysledek}")
 ```
 
 ### Simple ATM
-* program a simple ATM @Dacos
-* let the user input his card number, pin and how much money he wants
-* If the card is not 43-1199223344, say "wrong card!"
-* if the card is correct, proceed to check the pin. If the pin is not 3194, say "wrong pin!"
-* if both card and pin are correct, check if he has enough money on his account (1000,- czk) he can take out
-* If he has, say "Ok, paying [number] Kc, otherwise say "not enough money on your account"
+* Implement a simple ATM.
+* let the user put to the input his card number, PIN and the amount of money to withdraw.
+* If the card number is not 43-1199223344, say "Invalid card number!"
+* if the card number is correct, proceed to check the PIN. If the PIN is not 3194, say "Invalid PIN!"
+* if both card number and PIN are correct, check if it's possible to withdraw the requested amount of money from his banking account with the balance 1000 CZK.
+* If it's possible, print to the output "You have withdrawn [amount] CZK and your new balance is [balance] CZK.", otherwise print "Not enough money in the bank account!"
+
+```python
+VALID_CARD_NUMBER = 43-1199223344
+VALID_PIN = 3194
+
+account_balance = 1000
+
+card_number = input("Enter your card number: ")
+if card_number != VALID_CARD_NUMBER:
+    print("Invalid card number!")
+    exit(1)
+pin = input("Enter your PIN: ")
+if pin != VALID_PIN:
+    print("Invalid PIN!")
+    exit(1)
+withdrawal = int(input("Enter your withdrawal amount (in CZK): "))
+if withdrawal > account_balance:
+    print("Not enough money in the bank account!")
+    exit(1)
+
+account_balance = account_balance - withdrawal
+print("You have withdrawn " + str(withdrawal) + " CZK and your new balance is " + str(account_balance) + " CZK.")
+```
 
 # Hackaday #1
 * Ifs are a big part of computing, we can show them examples of scripts that make our lives better. If someone has a good suggestion, you can do live coding
 
 # Notes
 * People often try to put the results of a function in a if statement
-```
+```python
 if x = input() < 3:
 ```
 
 Discourage that
 * People also tend to insert too many statements into one if
-```
+```python
 if x > 4 and 5:
     <code>
 ```
