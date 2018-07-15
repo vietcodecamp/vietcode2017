@@ -29,27 +29,32 @@ while is_heads:
 * **Problem:** Sometimes you need to decide inside the loop whether to continue in the loop or not.
 * **Solution:** We can use a `break` statement to exit the loop.
 
-**Example:** Write a program that takes coefficient of a quadratic equation ax^2+bx+c=0 and computes the solution. Stop the program when the quadratic coefficient (a) is zero.
+**Example:** Write a program that takes coefficient of a quadratic equation ax<sup>2</sup> + bx + c = 0 and computes the solution. Stop the program when the quadratic coefficient `a` is zero.
+
 
 ```python
+print('This script calculates the solutions of a quadratic equation in form ax^2 + bx + c = 0')
 
 while True:
-    a = input('Zadejte koeficient a')
-    
-    if a==0:
-        break # Po tomto prikazu bude smycka ukoncena a vykonaji se prikazy nasledujici vne smycky
-        
-    b = input('Zadejte koeficient b')
-    c = input('Zadejte koeficient c')
-    
-    D = b**2 - 4*a*c
-    
-    x1 = (-b + D**(1/2))/(2*a)
-    x2 = (-b - D**(1/2))/(2*a)
-    
-    print('Reseni kvadraticke rovnice je x1='+str(x1)+', x2='+str(x2))
-    
-print('Program byl ukoncen')
+    a = input('Enter the coefficient a')
+
+    if a == 0:
+        print('The coefficient a equals to 0.\n The program will terminate.')
+        break # After this command, the loop will be exited from. The commands after this while loop will be executed
+        print('This will NEVER be executed.')
+
+    b = input('Enter the coefficient b')
+    c = input('Enter the coefficient c')
+
+    dicriminant = b**2 - 4*a*c
+    sqrt_discriminant = dicriminant ** (1/2)
+
+    x1 = (-b + sqrt_discriminant)/(2*a)
+    x2 = (-b - sqrt_discriminant)/(2*a)
+
+    print('The solution of the quadratic equation is x1=' + str(x1) + ', x2=' + str(x2))
+
+print('The script terminated.')
 
 ```
 
@@ -60,32 +65,40 @@ print('Program byl ukoncen')
 **Example:** Modify the previous program to warn the user when the discriminant is negative
 
 ```python
-
+print('This script calculates the solutions of a quadratic equation in form ax^2 + bx + c = 0')
 while True:
-    a = input('Zadejte koeficient a')
-    
-    if a==0:
-        break # Po tomto prikazu bude smycka ukoncena a vykonaji se prikazy nasledujici vne smycky
-        
-    b = input('Zadejte koeficient b')
-    c = input('Zadejte koeficient c')
-    
-    D = b**2 - 4*a*c
-    
-    if D<0:
-        print('Diskriminant je zaporny, neexistuje reseni v realnych cislech')
-        continue # Po tomto prikazu nebude vykonan zbytek smycky a program zacne vykonavat smycku od zacatku
-        
-    x1 = (-b + D**(1/2))/(2*a)
-    x2 = (-b - D**(1/2))/(2*a)
-    
-    print('Reseni kvadraticke rovnice je x1='+str(x1)+', x2='+str(x2))
-    
-print('Program byl ukoncen')
+    a = input('Enter the coefficient a')
+
+    if a == 0:
+        print('The coefficient a equals to 0.\n The program will terminate.')
+        break # After this command, the loop will be exited from. The commands after this while loop will be executed.
+        print('This will NEVER be executed.')
+
+
+    b = input('Enter the coefficient b')
+    c = input('Enter the coefficient c')
+
+    dicriminant = b ** 2 - 4*a*c
+
+    if dicriminant < 0:
+        print('The discriminant is negative. There is no real number solution.')
+        continue # After this command, the loop will be exited from. The commands after this while loop will be executed.
+
+    sqrt_discriminant = dicriminant ** (1/2)
+
+    print('If the discriminant is negative, this will not get printed.')
+    x1 = (-b + sqrt_discriminant)/(2*a)
+    x2 = (-b - sqrt_discriminant)/(2*a)
+
+    print('The solution of the quadratic equation is x1=' + str(x1) + ', x2=' + str(x2))
+
+print('The script terminated.')
 
 ```
 
-* `break` and `continue` can also be used in `for` loops. Summary: `break` exits the most inner loop and `continue` just skips the code after and a new iteration begins (if there is one).
+* `break` and `continue` can also be used in `for` loops.
+
+**Summary:** `break` exits the most inner loop and `continue` just skips the code after and a new iteration begins (if there is one).
 
 
 # While vs for loops
@@ -96,12 +109,12 @@ print('Program byl ukoncen')
 
 # Exercises
 ## Average from input
-* Předtím jsme vytvořili skript, který se uživatele zeptá na počet lidí a pak ve for smyčce získá hodnoty. Změňte for smyčku za while smyčku s tím, že bude skript sbírat data dokud nebude na vstupu "STOP". Po zadání stop se spočítá průměr jako předtím.
+* Předtím jsme vytvořili skript, který se uživatele zeptá na počet lidí a pak ve for smyčce získá hodnoty. Změňte for smyčku za `while` smyčku s tím, že bude skript sbírat data dokud nebude na vstupu `"STOP"`. Po zadání stop se spočítá průměr jako předtím.
 
 ```python
 soucet_velikosti_bot = 0
 pocet_student = 0
-while true
+while True:
     vstup = input("Zadej velikost bot nebo \"STOP\" pro spočítání průměru: ")
     if vstup == "STOP":
         break
@@ -109,11 +122,11 @@ while true
         soucet_velikosti_bot += float(vstup))
         pocet_studentu += 1
 prumer = soucet_velikosti_bot / pocet_studentu
-print("Průměrná velikost bot je {}".format(prumer))  
+print("Průměrná velikost bot je " + prumer
 ```
 
 # Extra
-* This lesson would be suitable for a programmer interview task (ideally coded by the lecturers). Most programmer inteviews are on data structures such as trees and maps which are covered during the first semester at University. These questions are from actual interviews. Sadly, the more interesting ones involve objects.
+* This lesson would be suitable for a programmer interview task (ideally coded by the lecturers). Most programmer interviews are on data structures such as trees and maps which are covered during the first semester at University. These questions are from actual interviews. Sadly, the more interesting ones involve objects.
 * A programmer interview has 1 to 3 tasks. You solve the task while commenting on it. Afterwards, you discuss the time complexity with your interviewer. Finally, you can ask the interviewer questions about the company. The whole process takes roughly an hour.
 
 ## Anagramy
