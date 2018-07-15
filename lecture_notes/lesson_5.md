@@ -27,33 +27,61 @@ while is_heads:
 # Exiting the while loop
 * One of the obvious way is to set the condition to `False` inside the loop so that the next iteration will not happen. But consider the following problem.
 * **Problem:** Sometimes you need to decide inside the loop whether to continue in the loop or not.
-
 * **Solution:** We can use a `break` statement to exit the loop.
+
+**Example:** Write a program that takes coefficient of a quadratic equation ax^2+bx+c=0 and computes the solution. Stop the program when the quadratic coefficient (a) is zero.
 
 ```python
 
-while 1 < 2:
-  ... # do something here
+while True:
+    a = input('Zadejte koeficient a')
+    
+    if a==0:
+        break # Po tomto prikazu bude smycka ukoncena a vykonaji se prikazy nasledujici vne smycky
+        
+    b = input('Zadejte koeficient b')
+    c = input('Zadejte koeficient c')
+    
+    D = b**2 - 4*a*c
+    
+    x1 = (-b + D**(1/2))/(2*a)
+    x2 = (-b - D**(1/2))/(2*a)
+    
+    print('Reseni kvadraticke rovnice je x1='+str(x1)+', x2='+str(x2))
+    
+print('Program byl ukoncen')
 
-  if condition_is_true:
-    break # Exit this loop
-  ... # the rest of the code
-  print("If the condition_is_true is True, this will NOT be printed.")
-
-print("This will be printed after the loop finishes.")
 ```
 
 # Skipping the some code in a loop
 * **Problem:** Sometimes you want to skip some code inside the loop but not exit the loop. For example.
 * **Solution:** Use `continue` to skip the code after continue and start a new iteration.
 
-```python
-while some_condition:
-  ... # do something here
-  if something_bad_happens:
-    continue
+**Example:** Modify the previous program to warn the user when the discriminant is negative
 
-  ... # if continue is called this code will be skipped
+```python
+
+while True:
+    a = input('Zadejte koeficient a')
+    
+    if a==0:
+        break # Po tomto prikazu bude smycka ukoncena a vykonaji se prikazy nasledujici vne smycky
+        
+    b = input('Zadejte koeficient b')
+    c = input('Zadejte koeficient c')
+    
+    D = b**2 - 4*a*c
+    
+    if D<0:
+        print('Diskriminant je zaporny, neexistuje reseni v realnych cislech')
+        continue # Po tomto prikazu nebude vykonan zbytek smycky a program zacne vykonavat smycku od zacatku
+        
+    x1 = (-b + D**(1/2))/(2*a)
+    x2 = (-b - D**(1/2))/(2*a)
+    
+    print('Reseni kvadraticke rovnice je x1='+str(x1)+', x2='+str(x2))
+    
+print('Program byl ukoncen')
 
 ```
 
