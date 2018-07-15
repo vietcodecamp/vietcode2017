@@ -1,9 +1,10 @@
 # Lesson 3
-** Lesson goal:** At the end of this lesson the learner will understand the basic concepts of conditionals and Boolean algebra
+** Lesson goal:** At the end of this lesson the learner will understand the basic concepts of conditionals and logical operators
 
 ## Outline
 * Conditionals if, not
-* Boolean algebra intro
+* Comparison operators
+* Logical operators
 * Nested conditions
 * Indentation, function scope (VERY HARD)
 * For any kind of logic or control flow, we need conditional statements.
@@ -55,9 +56,9 @@ else:
 print("This should be printed out again")
 ```
 
-## Boolean algebra
+## Logical operators
 * To combine conditions, we can use `and` and `or` operators
-* To invert a truth value use `not`
+* To invert a value use `not`
 * **NOTE** make truth value tables
 
 ## Nested conditions
@@ -80,7 +81,7 @@ if 2 < x < 4:
 ## Terminating a program
 * There are cases where we need to terminate program earlier because there is no need to process anything further.
 * To exit a program we can use the function `exit()` or `quit()`, with the parameter that determines the exit code (we do not cover exit codes in this course).
-* Note: It's recommended to use `sys.exit()` in programs. The official Python [documentation](https://docs.python.org/3/library/sys.html#sys.exit) recommends `exit()` and `quit()`only for interactive interpreter shell, but for the sake of fast learning we'll use these functions also in programs.
+* Note: It's recommended to use `sys.exit()` in programs instead of `exit()` or `quit()`. To see more read the official Python [documentation](https://docs.python.org/3/library/sys.html#sys.exit).
 ```
 login = input("Enter your login name: ")
 if login != "kemper":
