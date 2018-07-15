@@ -14,6 +14,7 @@
 * **Solution:** We use a `while` loop. While loop repeats itself when a condition is `True`.
 When the condition is `False` in time of checking (the beginning of every iteration), the code inside of the loop will not be executed.
 
+**Example:**
 *"When you brush your teeth, you don't stop after, say, 200 strokes right? (Or at least most of us don't). You stop when you feel the teeth are clean. It can be after 100 strokes, or it can be after 400 strokes (e.g. when you go out for a date with your crush ;) "*
 
 
@@ -24,13 +25,13 @@ Now let's go more programatic:
   2. *If they are, he executes the command BRUSH-ONCE and returns to point 1.*
   3. *If they are not dirty anymore, his job is done and he shuts down. (exiting the loop)*
 
-**Example:**
+
 ```python
-from random import random
-# Flip a coin until it is not heads
-is_heads = True
-while is_heads:
-  is_heads = random() > 0.5 # random() returns a random number between 0.0 and 1.0
+teeth_are_dirty = True
+while teeth_are_dirty:
+  teeth_are_dirty = brush_once() returns a random number between 0.0 and 1.0
+
+print('Teeth are now clean.')
 
 ```
 
@@ -39,7 +40,7 @@ while is_heads:
 * **Problem:** Sometimes you need to decide inside the loop whether to continue in the loop or not.
 * **Solution:** We can use a `break` statement to exit the loop.
 
-
+* **Analogy:**
 
 *Imagine you have a company, that sells a wood chopping robots. They work this way:*
 
