@@ -11,8 +11,9 @@ soucet = 0
 for cislo in cisla:
   soucet += cislo
 
-print("Součet čísel je: {}".format(soucet))
+print("Součet čísel je: " + soucet))
 ```
+
 
 * Improve the above code so that it also prints the **average** of the numbers
 
@@ -23,8 +24,8 @@ for cislo in cisla:
   soucet += cislo
 
 prumer = soucet / len(cisla)
-print("Součet čísel je: {}".format(soucet))
-print("Průměr čísel je: {}".format(prumer))
+print("Součet čísel je: " + soucet)
+print("Průměr čísel je: " + prumer)
 ```  
 
 ## Food list
@@ -59,7 +60,7 @@ for (index, prvek) in enumerate(jidla):
 ```python
 jidla = []
 for i in range(1, 6):
-  jidla.append(input("Zadej tvoje {}. nejoblíbenější jídlo: ".format(i)))
+  jidla.append(input("Zadej tvoje " + str(i) + ". nejoblíbenější jídlo: "))
 
 print("Tvoje nejoblíbenější jídla jsou: " + ', '.join(jidla))  
 ```
@@ -73,5 +74,5 @@ for i in range(pocet_studentu):
   soucet_velikosti_bot += float(input("Zadej velikost bot {}. studenta: ".format(i + 1)))
 
 prumer = soucet_velikosti_bot / pocet_studentu
-print("Průměrná velikost bot je {}".format(prumer))  
+print("Průměrná velikost bot je " + str(prumer))  
 ```
