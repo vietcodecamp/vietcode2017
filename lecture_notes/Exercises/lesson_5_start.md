@@ -1,4 +1,4 @@
-# Exercises - Finished
+# Exercises - Start
 
 ## Average from input
 * Předtím jsme vytvořili skript, který se uživatele zeptá na počet lidí a pak ve for smyčce získá hodnoty. Změňte for smyčku za `while` smyčku s tím, že bude skript sbírat data dokud nebude na vstupu `"STOP"`. Po zadání stop se spočítá průměr jako předtím.
@@ -7,14 +7,16 @@
 soucet_velikosti_bot = 0
 pocet_student = 0
 while True:
-    vstup = input("Zadej velikost bot nebo \"STOP\" pro spočítání průměru: ")
-    if vstup == "STOP":
+    # 1. Vem vstup
+    if ...: # 2. pokud je vstup "STOP", ukončit program
         break
     else:
-        soucet_velikosti_bot += float(vstup))
-        pocet_studentu += 1
-prumer = soucet_velikosti_bot / pocet_studentu
-print("Průměrná velikost bot je " + prumer
+      # 3. Uložit si hodnoty pro výpočet průměru
+
+# Vypočet průměru
+
+# Tisk odpovědi
+
 ```
 
 ## Dacos casino

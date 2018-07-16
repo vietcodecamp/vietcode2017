@@ -14,7 +14,7 @@ while True:
         soucet_velikosti_bot += float(vstup))
         pocet_studentu += 1
 prumer = soucet_velikosti_bot / pocet_studentu
-print("Průměrná velikost bot je " + prumer
+print("Průměrná velikost bot je " + str(prumer))
 ```
 
 ## Dacos casino
