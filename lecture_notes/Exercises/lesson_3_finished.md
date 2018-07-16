@@ -17,18 +17,20 @@ not ((5 > 4) or (3 == 5)) # False
 ```python
 vek = int(input("Kolik je ti let? "))
 let_do_duchodu = 65 - vek
-if vek <= 65 :
+
+if let_do_duchodu > 0 :
   odpoved = "Zbyva ti " + str(let_do_duchodu) + " let do duchodu!"
 else:  
-  odpoved = "Už jsi v důchodu {} let".format(vek - 65)  
+  odpoved = "Už jsi v důchodu " + str(-let_do_duchodu) + " let"
 print(odpoved)
 ```
 
 * For the BMI calculator, do a quick check if people used meters instead of centimeters (the height should be over 100cm, for example)
 
 ```python
-vaha = float(input("Kolik vazis? (v kg)"))
-vyska = float(input("Kolik meris? (v metrech)"))
+vaha = float(input("Kolik vážíš? (v kg)"))
+vyska = float(input("Kolik měříš? (v metrech nebo centimetrech)"))
+
 if vyska > 100:
   vyska = vyska/100 # převod na metry
 
@@ -40,8 +42,8 @@ print("Tvé BMI je " + str(bmi))
 * Make a script that takes 2 numbers and says which one is bigger (note, don't just print the number, tell which one is larger! I.e. the first or the second)
 
 ```python
-prvni_cislo =  int(input("cislo 1: "))
-druhe_cislo =  int(input("cislo 2: "))
+prvni_cislo =  int(input("Číslo 1: "))
+druhe_cislo =  int(input("Číslo 2: "))
 
 if prvni_cislo > druhe_cislo:
   print("První číslo je větší.")
@@ -126,7 +128,7 @@ elif operace == '/':
   else:  
     vysledek = prvni_cislo / druhe_cislo
 
-print(f"{prvni_cislo} {operace} {druhe_cislo} = {vysledek}")
+print(prvni_cislo, operace, druhe_cislo, " = ", vysledek)
 ```
 
 ## Simple ATM
@@ -138,24 +140,24 @@ Implement a simple ATM.
 5. If it's possible, print to the output "You have withdrawn [amount] CZK and your new balance is [balance] CZK.", otherwise print "Not enough money in the bank account!"
 
 ```python
-VALID_CARD_NUMBER = 43-1199223344
-VALID_PIN = 3194
+VALIDNI_CISLO_KARTY = 43-1199223344
+VALIDNI_PIN = 3194
 
-account_balance = 1000
+ucetni_zustatek = 1000
 
-card_number = input("Enter your card number: ")
-if card_number != VALID_CARD_NUMBER:
-    print("Invalid card number!")
+cislo_karty = input("Zadejte číslo karty: ")
+if cislo_karty != VALIDNI_CISLO_KARTY:
+    print("Neznámé číslo karty!")
     exit(1)
-pin = input("Enter your PIN: ")
-if pin != VALID_PIN:
-    print("Invalid PIN!")
+pin = input("Zadejte PIN: ")
+if pin != VALIDNI_PIN:
+    print("Špatný PIN!")
     exit(1)
-withdrawal = int(input("Enter your withdrawal amount (in CZK): "))
-if withdrawal > account_balance:
-    print("Not enough money in the bank account!")
+vyber = int(input("Zadejte výši výběru v Kč: "))
+if vyber > ucetni_zustatek:
+    print("Nemáte dostatek peněz na účtě!")
     exit(1)
 
-account_balance = account_balance - withdrawal
-print("You have withdrawn " + str(withdrawal) + " CZK and your new balance is " + str(account_balance) + " CZK.")
+ucetni_zustatek = ucetni_zustatek - vyber
+print("Vybrali jste " + str(vyber) + " Kč a účetní zůstatek je " + str(ucetni_zustatek) + " Kč.")
 ```
