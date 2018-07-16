@@ -58,9 +58,9 @@ else:
 cislo =  int(input("Zadej číslo: "))
 
 if cislo < 0:
-  print(f"Absolutní hodnota čísla {cislo} je {-cislo}")
+  print("Absolutní hodnota čísla " + str(cislo) + " je " +  str(-cislo))
 else:
-  print(f"Absolutní hodnota čísla {cislo} je {cislo}")"
+  print("Absolutní hodnota čísla " + str(cislo) + " je " +  str(cislo))
 ```
 
 ## University grading
