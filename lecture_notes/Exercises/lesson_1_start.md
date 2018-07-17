@@ -1,7 +1,7 @@
 # Exercises - Start
 ## Retirement
 * Write a program that receives your age and tells you **how many years** you have left **before you retire**. (The age of retirement should be **65**.
-You will only need `input()`, `print()`, `int()`, `str()` and `float()` for casting
+You will only need `input()` and `print()` for user interaction and `int()` and `str()` for casting (getting numbers from strings and vice versa)
 
 ```python
 # expected output at this point
@@ -48,7 +48,8 @@ PI = 3.14 # definování konstanty - proměnná, která se nemění
 * Write a program that receives a number representing **minutes**. The goal is to convert minutes into **hours and minutes**. You will need `input()`, `print()`, `str()` and `int()` for casting. You will further need these operators: integer division (`//`) and modulo (`%`) (modulo calculates the reminder after division, eg. `5%3 = 2` - the remainder after dividing `5` by `3` is `2`)
 
 ```python
-# 0. definování konstanty počtu minut v hodině - proměnná, která se nemění, není nutné, ale je to lepší.
+POCET_MINUT_V_HODINE = 60 # definování konstanty - proměnná, která se nemění
+
 
 # 1. vypočítat počet hodin z minut (Hint: použít celočíselné dělení `//`)
 # 2. vypočítat počet počet zbylých minut (Hint: zbytek po dělení - modulo `%`)
