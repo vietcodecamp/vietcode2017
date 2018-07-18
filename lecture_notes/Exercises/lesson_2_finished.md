@@ -44,7 +44,7 @@ print("Daruji jí " + inventar[1])
 ```
 
 ## Upper Case
-* Write a script that yells back at you whatever you tell it. You will use `upper()`
+* Write a script that yells back at you whatever you tell it. You will use `upper()`. You can put some bad word to the end, but don't tell anyone.
 ```python
 vstup = input("Co delas ")
 odpoved = vstup.upper() + "!!!"
@@ -52,7 +52,7 @@ print(odpoved)
 ```
 
 ## X-mass tree
-* Draw a x-mass tree. Use a single print function and a string concatenation method
+* Draw a x-mass tree. Use a single print function and a string concatenation (joining) method
   * Note, we will improve this using loops later on
 It should look like this:
 

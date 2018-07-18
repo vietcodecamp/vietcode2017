@@ -5,7 +5,8 @@
 
 
 ```python
-vstup = input("Napis text ") # 1. získat vstup od uživatele
+# 1. získat vstup od uživatele
+vstup = input("Napis text ") 
 
 # 2. získat počet znaků ze vstupu (Hint: funkce `len()` vrací počet znaků)
 
@@ -44,7 +45,7 @@ print("Daruji jí " + inventar[__])
 ```
 
 ## Upper Case
-* Write a script that yells back at you whatever you tell it. You will use `upper()`
+* Write a script that yells back at you whatever you tell it. You will use `upper()`. You can put some bad word to the end, but don't tell anyone.
 
 ```python
 # 1. získej vstupu
@@ -56,7 +57,7 @@ print("Daruji jí " + inventar[__])
 ```
 
 ## X-mass tree
-* Draw a x-mass tree. Use a single print function and a string concatenation method
+* Draw a x-mass tree. Use a single print function and a string concatenation (joining) method
   * Note, we will improve this using loops later on
 It should look like this:
 

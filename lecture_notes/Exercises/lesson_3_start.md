@@ -18,10 +18,10 @@ not ((5 > 4) or (3 == 5))
 vek = int(input("Kolik je ti let? "))
 
 # Poznámka. V if a else nezapomeňte na odsazení! Buď tab nebo 2 mezery od začátku.
-if ... : # 1. doplnit podmínku místo teček
-  # 2. pokud let_do_duchodu je 65 a méně, vypiš kolik let zbývá do důchodu
+if ... :    # 1. doplň podmínku místo teček (podmínka: *let_do_duchodu je 65 a méně*)
+    # 2. vypiš kolik let zbývá do důchodu
 else:  
-  # 3. v opačném případě vypdat kolik let již v chůdodu je.
+    # 3. v opačném případě vypsat kolik let již v chůdodu je.
 
 ```
 
@@ -31,8 +31,8 @@ else:
 vaha = float(input("Kolik vážíš? (v kg)"))
 vyska = float(input("Kolik měříš? (v metrech nebo centimetrech)"))
 
-if ... : # 1. doplnit podmínku
-  # 2. převod na metry
+if ... : # 1. doplnit podmínku (podmínka: *pokud je hodnota výšky nad 100*)
+    # 2. pokud ano, převeď na metry
 
 # 3. výpočet BMI
 

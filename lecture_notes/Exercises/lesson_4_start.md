@@ -3,13 +3,13 @@
 ## Warm-up
 * Given an array of numbers `cisla = [4.5, 1.5, 1.2, 8.9, 2.3]` calculate the **sum** of the numbers
   * Note: without using `sum()`
-  * Hints: calculate the sum using a for loop and save the result to a variable
+  * Hints: calculate the sum using a for loop and save partial results into a variable
 
 ```python
 cisla = [ 4.5, 1.5, 1.2, 8.9, 2.3]
 soucet = 0
 for cislo in cisla:
-  # 1. přičti číslo k proměnné soucet. Nezapomenout na odsazení zleva!
+    # 1. přičti číslo k proměnné soucet. Nezapomenout na odsazení zleva!
 
 # 2. vytiskni odpověď
 ```
@@ -20,7 +20,7 @@ for cislo in cisla:
 cisla = [ 4.5, 1.5, 1.2, 8.9, 2.3]
 soucet = 0
 for cislo in cisla:
-  # přičti číslo k proměnné soucet. Nezapomenout na odsazení zleva!
+    # přičti číslo k proměnné soucet. Nezapomenout na odsazení zleva!
 
 # 2. vypočítej průměr
 
@@ -51,7 +51,7 @@ for jidlo in jidla:
 
 ## Input in for loop
 * Get 5 favourite foods from a user using a loop
- * Hint: `for i in range(5):`, `jidla.append(input("Zadejte jídlo: "))`, `', '.join(jidla)`,
+ * Hint: `for i in range(5):` to make the loop run 5 times, `jidla.append(input("Zadejte jídlo: "))`, `', '.join(jidla)`,
 
 ```python
 jidla = []

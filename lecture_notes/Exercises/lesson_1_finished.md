@@ -1,8 +1,8 @@
 
 # Exercises - Finished
 ## Retirement
-* Write a program that receives your age and tells you **how many years** you have left **before you retire**. (The age of retirement should be **65**.
-You will only need `input()`, `print()`, `int()`, `str()` and `float()` for casting
+* Write a program that receives your age and tells you **how many years** you have left **before you retire**. (The age of retirement should be **65**).
+You will only need `input()`, `print()` to interact with the user and `int()`, `str()` for casting (i.e getting numbers from characters and vice versa)
 
 ```python
 # expected output at this point
