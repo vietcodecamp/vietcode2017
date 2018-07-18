@@ -2,9 +2,9 @@
 
 ## Importing time library
 
-* Import the `time` library, read up the sleep() and time() function
-* Create a script that counts down 3 seconds and lets the user write "the quick brown fox jumps over the lazy dog"
-* Afterwards, it validates the input (you can do both == compare or loop through the string
+* Import the `time` library, read up the `sleep()` and `time()` function
+* Create a script that counts down 3 seconds and lets the user write *"The quick brown fox jumps over the lazy dog"*
+* Afterwards, it validates the input (you can do both `==` compare the strings or loop through the all characters
 * finally, it tells the time elapsed between start of the input and when user wrote the new line, calculate words per minute
 ```python
 import time

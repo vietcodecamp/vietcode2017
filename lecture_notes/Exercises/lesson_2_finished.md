@@ -1,13 +1,11 @@
-# Exercises
-* [Start](./Exercises/lesson_3_start.md)
-* [Finished](../Exercises/lesson_4_finished.md)
+# Exercises - Finished
 
 ## Input length
 * Write a script that reads the input of a user and tells him how many characters he wrote
 ```python
-vstup = input("Napis text ")
+vstup = input("Napiš text ")
 pocet_znaku = len(vstup)
-odpoved = "Napsal jsi" + str(pocet_znaku) +  "znaku!"
+odpoved = "Napsal jsi" + str(pocet_znaku) +  "znaků!"
 print(odpoved)
 ```
 
@@ -18,8 +16,8 @@ jmena = [] # empty list
 jmena.append(input("Napiš první jméno: "))
 jmena.append(input("Napiš druhé jméno: "))
 jmena.append(input("Napiš třetí jméno: "))
-odpoved = "{}, {} a {} se potkali v hospode a dali si pivo".format(jmena[0], jmena[1], jmena[2])
-print(odpoved)
+
+print(jmena[0] + ", " + jmena[1] + " a " + jmena[2] + " se potkali v hospodě a dali si pivo.")
 ```
 
 ## READING exercise
@@ -39,14 +37,14 @@ print(x[5:8]) # 's k'
 * Create a list called 'inventory' for your knight that includes "sword", "puppy", "ice cream", "fancy hat" and 2 more items of your choice.
 * Find the right indexes to get the right item to fight the dragon and save the princess, make a good impression on the princess to fall in love with you and give her a wedding gift.
 ```python
-inventory = ["sword", "puppy", ...]
-print("I fight the dragon with " + inventory[__])
-print("I impress the princess with " + inventory[__])
-print("I give " + inventory[__] + " to her")
+inventar = ["meč", "štěňátko", "velkým bicepsem"]
+print("Zdolal jsem draka a přitom použil" + inventar[0])
+print("Udělám dojem mým " + inventar[2])
+print("Daruji jí " + inventar[1])
 ```
 
 ## Upper Case
-* Write a script that yells back at you whatever you tell it. You will use `upper()`
+* Write a script that yells back at you whatever you tell it. You will use `upper()`. You can put some bad word to the end, but don't tell anyone.
 ```python
 vstup = input("Co delas ")
 odpoved = vstup.upper() + "!!!"
@@ -54,7 +52,7 @@ print(odpoved)
 ```
 
 ## X-mass tree
-* Draw a x-mass tree. Use a single print function and a string concatenation method
+* Draw a x-mass tree. Use a single print function and a string concatenation (joining) method
   * Note, we will improve this using loops later on
 It should look like this:
 

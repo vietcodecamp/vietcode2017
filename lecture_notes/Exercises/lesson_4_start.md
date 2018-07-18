@@ -1,17 +1,17 @@
-# Exercises - Finished
+# Exercises - Start
 
 ## Warm-up
 * Given an array of numbers `cisla = [4.5, 1.5, 1.2, 8.9, 2.3]` calculate the **sum** of the numbers
   * Note: without using `sum()`
-  * Hints: calculate the sum using a for loop and save the result to a variable
+  * Hints: calculate the sum using a for loop and save partial results into a variable
 
 ```python
 cisla = [ 4.5, 1.5, 1.2, 8.9, 2.3]
 soucet = 0
 for cislo in cisla:
-  soucet += cislo
+    # 1. přičti číslo k proměnné soucet. Nezapomenout na odsazení zleva!
 
-print("Součet čísel je: {}".format(soucet))
+# 2. vytiskni odpověď
 ```
 
 * Improve the above code so that it also prints the **average** of the numbers
@@ -20,11 +20,12 @@ print("Součet čísel je: {}".format(soucet))
 cisla = [ 4.5, 1.5, 1.2, 8.9, 2.3]
 soucet = 0
 for cislo in cisla:
-  soucet += cislo
+    # přičti číslo k proměnné soucet. Nezapomenout na odsazení zleva!
 
-prumer = soucet / len(cisla)
-print("Součet čísel je: {}".format(soucet))
-print("Průměr čísel je: {}".format(prumer))
+# 2. vypočítej průměr
+
+# 3. vytiskni součet a průměr čísel
+
 ```  
 
 ## Food list
@@ -44,34 +45,33 @@ jidla = ["bun cha", "knedlo vepro zelo", "pho", "gulas"]  # Uloz do pole svoje o
 #
 poradi = 1
 for jidlo in jidla:
-    print(str(poradi) + ". " + jidlo)
-    poradi = poradi + 1
-
-# Použití enumerated
-for (index, prvek) in enumerate(jidla):
-    print(str(index + 1) + ". " + prvek)
+    # 1. Vytiskni pořadí a jídlo
+    # 2. Zvyš pořadí o 1
 ```
 
 ## Input in for loop
 * Get 5 favourite foods from a user using a loop
- * Hint: `for i in range(5):`, `jidla.append(input("Zadejte jídlo: "))`, `', '.join(jidla)`,
+ * Hint: `for i in range(5):` to make the loop run 5 times, `jidla.append(input("Zadejte jídlo: "))`, `', '.join(jidla)`,
 
 ```python
 jidla = []
-for i in range(1, 6):
-  jidla.append(input("Zadej tvoje {}. nejoblíbenější jídlo: ".format(i)))
+for i in range(5):
+  # 1. získej hodnotu jídla od uživatele a připoj ho do listu jidla
 
-print("Tvoje nejoblíbenější jídla jsou: " + ', '.join(jidla))  
+# 2. Vytiskni odpověď  - pro tisk všechno hodnot v listu jidla použij: ', '.join(jidla)
+
 ```
 ## Average from input
 * Calculate the average shoe size in your class. First ask for the number of students, then get all of their sizes. Then sum and divide them to get the average
 
 ```python
 soucet_velikosti_bot = 0
-pocet_studentu = int(input("Zadej počet studentů: "))
-for i in range(pocet_studentu):
-  soucet_velikosti_bot += float(input("Zadej velikost bot {}. studenta: ".format(i + 1)))
+# 1. Získej počet studentů
 
-prumer = soucet_velikosti_bot / pocet_studentu
-print("Průměrná velikost bot je {}".format(prumer))  
+# 2. proveď smyčku přes počet studentů
+  # 3. přičti velikosti bot - odsazení je tu schválně, aby se na to nezapomnělo.
+
+# 4. Vypočítej průměr velikosti bot
+
+# 5. Vytiskni odpověď
 ```

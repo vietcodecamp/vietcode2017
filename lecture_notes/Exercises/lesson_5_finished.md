@@ -14,7 +14,7 @@ while True:
         soucet_velikosti_bot += float(vstup))
         pocet_studentu += 1
 prumer = soucet_velikosti_bot / pocet_studentu
-print("Průměrná velikost bot je " + prumer
+print("Průměrná velikost bot je " + str(prumer))
 ```
 
 ## Dacos casino
@@ -29,11 +29,11 @@ There will a game, in which you play dices against Dacos himself. The rules are 
 * This lesson would be suitable for a programmer interview task (ideally coded by the lecturers). Most programmer interviews are on data structures such as trees and maps which are covered during the first semester at University. These questions are from actual interviews. Sadly, the more interesting ones involve objects.
 * A programmer interview has 1 to 3 tasks. You solve the task while commenting on it. Afterwards, you discuss the time complexity with your interviewer. Finally, you can ask the interviewer questions about the company. The whole process takes roughly an hour.
 
-## Anagramy
-* Napis metodu, co zjisti, jestli jsou dva retezce anagramy nebo ne.
+## Anagrams
+* Write a script, which tells, whether two words are "anagrams", or not. Two words are anagrams, if one word can be obtained by re-arranging letters of the other. The famous anagrams are `"Nomen" -"Omen"` 
 
-## Unikat
-* Napis metodu, co zjisti, jestli se v retezci nevyskytuje nejaky znak dvakrat. BONUS: bez pouziti datove struktury.
+## Unique
+* Write a script, which tells, whether there is any letter in the given word present more, than once
 
 ## prefix tree (my interview!! Dacos challenge)
 * Napiste datovou strukturu reprezentujici prefixovy strom. (taky trie)
