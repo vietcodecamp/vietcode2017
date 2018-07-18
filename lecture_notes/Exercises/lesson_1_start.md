@@ -1,7 +1,7 @@
 # Exercises - Start
 ## Retirement
 * Write a program that receives your age and tells you **how many years** you have left **before you retire**. (The age of retirement should be **65**.
-You will only need `input()`, `print()` to interact with the user and `int()`, `str()` for casting (i.e getting numbers from characters and vice versa)
+You will only need `input()`, `print()`, `int()`, `str()` and `float()` for casting
 
 ```python
 # expected output at this point
@@ -49,6 +49,7 @@ PI = 3.14 # definování konstanty - proměnná, která se nemění
 
 ```python
 # 0. definování konstanty počtu minut v hodině - není nutné, ale je to lepší. Kód je čitelnější 
+POCET_MINUT_V_HODINE = 60
 
 # 1. vypočítat počet hodin z minut (Hint: použít celočíselné dělení `//`)
 # 2. vypočítat počet počet zbylých minut (Hint: zbytek po dělení - modulo `%`)
