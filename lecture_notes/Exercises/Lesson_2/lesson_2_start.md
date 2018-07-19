@@ -6,7 +6,7 @@
 
 ```python
 # 1. získat vstup od uživatele
-vstup = input("Napis text ") 
+vstup = input("Napis text ")
 
 # 2. získat počet znaků ze vstupu (Hint: funkce `len()` vrací počet znaků)
 
@@ -21,7 +21,7 @@ jmena = [] # 1. vytvoření prázdného listu
 
 # 2.-4. získání jména ze vstupu a přidání ho do listu (Hint: funkce `append()`)
 
-# 5. Tisk odpovědi
+# 5. Tisk odpovědi pomocí indexace
 
 ```
 
@@ -48,7 +48,7 @@ print("Daruji jí " + inventar[__])
 * Write a script that yells back at you whatever you tell it. You will use `upper()`. You can put some bad word to the end, but don't tell anyone.
 
 ```python
-# 1. získej vstupu
+# 1. získej vstup
 
 # 2. převést na velká písmena
 

@@ -4,8 +4,6 @@
 You will only need `input()`, `print()`, `int()`, `str()` and `float()` for casting
 
 ```python
-# expected output at this point
-# explain how to divide the program into steps
 vek = # 1. Použij input, abys zjistil věk. nezapomeň věk přetypovat na int !
 let_do_duchodu = # 2. zde vypočítej kolik zbývá let do důchodu( 65 let v ČR)
 odpoved = # 3. zde napiš nějakou odpověď a použij v ní proměnnou let_do_důchodu (nezapomeň jí přetypovat na str()!)
@@ -17,8 +15,6 @@ print(odpoved)
 You will only need `input()`, `print()`, and `float()` for casting
 
 ```python
-# expected output at this point
-# explain how to divide the program into steps
 vaha = # 1. z input() vzít hodnotu a tu pak přetypovat na float()
 vyska = # 2. z input() vzít hodnotu a tu pak přetypovat na float()
 bmi = # 3. Použij vzorec BMI
@@ -48,7 +44,7 @@ PI = 3.14 # definování konstanty - proměnná, která se nemění
 * Write a program that receives a number representing **minutes**. The goal is to convert minutes into **hours and minutes**. You will need `input()`, `print()`, `str()` and `int()` for casting. You will further need these operators: integer division (`//`) and modulo (`%`) (modulo calculates the reminder after division, eg. `5%3 = 2` - the remainder after dividing `5` by `3` is `2`)
 
 ```python
-# 0. definování konstanty počtu minut v hodině - není nutné, ale je to lepší. Kód je čitelnější 
+# 0. definování konstanty počtu minut v hodině - není nutné, ale je to lepší. Kód je čitelnější
 POCET_MINUT_V_HODINE = 60
 
 # 1. vypočítat počet hodin z minut (Hint: použít celočíselné dělení `//`)
