@@ -1,20 +1,20 @@
 # Lesson 3
-** Lesson goal:** At the end of this lesson the learner will understand the basic concepts of conditionals and logical operators
+**Lesson goal:** At the end of this lesson the learner will understand the basic concepts of conditionals and logical operators
 
 ## Outline
-1. Conditionals if, not
-2. Comparison operators
-3. Logical operators
+1. Conditionals `if` and `not`
+2. Comparison operators (used inside `if` and `not`)
+3. Logical operators (used inside `if` and `not`)
 4. Nested conditions
-5. Indentation, function scope (VERY HARD)
-6. For any kind of logic or control flow, we need conditional statements.
 7. Program termination.
 8. Exercises
 
 ## Booleans
-* For conditionals, we work with the boolean data type, which is either `True` or `False`
-* Note a boolean is a data type we can assign to a variable!
-* We create a boolean using comparison operators
+* For conditionals, we work with the boolean data type, which is either `True` or `False`. 
+  * You can also use `1` and `0` in Python
+  * or you can create a language which uses `:)` and `:(`
+* Note a boolean is a data type we can assign to a variable (`is_Earth_round = False`)
+* We create a boolean as a result of comparison operators
 ```python
 # Basic comparison operators
 x = 3 # This is not equal! This is a declaration!
@@ -29,8 +29,9 @@ y = x != 4  # Evaluate x is not equal to 4, save the result to y
 
 ## Conditionals
 * The basic conditional is `if <expression>`:
+  * `expression` can be anything that is boolean. For example `if 2 > 1: print("I'm not mad")`
 * If the logical expression is true, the if will run the indented commands. Otherwise nothing will happen
-* We also have else. If the condition in the if evaluates to False, the else branch gets run. Either the code in the if section runs, or the code in the else section runs. Never both!
+* We also have `else`. If the condition in the if evaluates to `False`, the else branch gets run. Either the code in the `if` section runs, or the code in the `else` section runs. Never both!
 
 ```python
 x = 4
@@ -63,7 +64,7 @@ print("This should be printed out again")
 ## Logical operators
 * To combine conditions, we can use `and` and `or` operators
 * To invert a value use `not`
-* **NOTE** make truth value tables
+* **NOTE**: recall the truth value table
 
 ## Nested conditions
 * For more complex schemes, we can nest if statements in each other.
