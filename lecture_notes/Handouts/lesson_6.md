@@ -6,8 +6,9 @@
 
 
 ## Exercises
-* [Start](./Exercises/lesson_6_start.md)
-* [Finished](../Exercises/lesson_6_finished.md)
+* [Files](../Exercises/Lesson_6)
+* [Start](../Exercises/Lesson_6/lesson_6_start.md)
+* [Finished](../Exercises/Lesson_6/lesson_6_finished.md)
 
 # Hackaday #2
 * requests, beautifulsoup

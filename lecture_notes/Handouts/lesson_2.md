@@ -155,8 +155,9 @@ print(my_list)
 ```
 
 ## Exercises
-* [Start](./Exercises/lesson_2_start.md)
-* [Finished](../Exercises/lesson_2_finished.md)
+* [Files](../Exercises/Lesson_2)
+* [Start](../Exercises/Lesson_2/lesson_2_start.md)
+* [Finished](../Exercises/Lesson_2/lesson_2_finished.md)
 
 # Notes
 * People confuse lists and indexing a lot

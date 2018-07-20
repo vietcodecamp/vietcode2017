@@ -155,5 +155,6 @@ This the crucial difference between those two commands
 * The main difference is in meaning of the loop. `for` loop is used generally when we know how many times we do the cycle. `while` loop is usually used if you don't know for sure how many times you should repeat the code (see the coin flip example above).
 
 # Exercises
-* [Start](./Exercises/lesson_5_start.md)
-* [Finished](../Exercises/lesson_5_finished.md)
+* [Files](../Exercises/Lesson_5)
+* [Start](../Exercises/Lesson_5/lesson_5_start.md)
+* [Finished](../Exercises/Lesson_5/lesson_5_finished.md)

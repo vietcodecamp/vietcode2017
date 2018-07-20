@@ -27,7 +27,7 @@ sentence = 'I will not waste chalk'
 for x in range(100):
     print(sentence)  
 ```
-and 
+and
 ```python
 sentence = 'I will not waste chalk'
 for x in range(100):
@@ -142,7 +142,7 @@ for i in range(len(seznam)): # len(seznam) vrací počet prvků v poli, to je d�
     print(seznam[i])
     #udelej_neco(seznam[i])
 ```
-* As you can see this syntax has a lot of repeating code and it's harder to read. 
+* As you can see this syntax has a lot of repeating code and it's harder to read.
 
 * Now with conditions, lists and loops we can implement most of our problems! We'll try to make more practical exercises here
 ```python
@@ -166,5 +166,6 @@ for dárek in dárky:
 
 # Exercises
 
-* [Start](./Exercises/lesson_4_start.md)
-* [Finished](../Exercises/lesson_4_finished.md)
+* [Files](../Exercises/Lesson_4)
+* [Start](../Exercises/Lesson_4/lesson_4_start.md)
+* [Finished](../Exercises/Lesson_4/lesson_4_finished.md)

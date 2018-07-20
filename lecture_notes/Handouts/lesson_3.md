@@ -10,7 +10,7 @@
 8. Exercises
 
 ## Booleans
-* For conditionals, we work with the boolean data type, which is either `True` or `False`. 
+* For conditionals, we work with the boolean data type, which is either `True` or `False`.
   * You can also use `1` and `0` in Python
   * or you can create a language which uses `:)` and `:(`
 * Note a boolean is a data type we can assign to a variable (`is_Earth_round = False`)
@@ -97,8 +97,9 @@ print("Your password is obsolete. Please change your password!")
 ```
 
 ## Exercises
-* [Start](./Exercises/lesson_3_start.md)
-* [Finished](../Exercises/lesson_3_finished.md)
+* [Files](../Exercises/Lesson_3)
+* [Start](../Exercises/Lesson_3/lesson_3_start.md)
+* [Finished](../Exercises/Lesson_3/lesson_3_finished.md)
 
 # Hackaday #1
 * Ifs are a big part of computing, we can show them examples of scripts that make our lives better. If someone has a good suggestion, you can do live coding
