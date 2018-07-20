@@ -10,6 +10,7 @@ cisla = [ 4.5, 1.5, 1.2, 8.9, 2.3]
 soucet = 0
 for cislo in cisla:
     # 1. přičti číslo k proměnné soucet. Nezapomenout na odsazení zleva!
+    soucet += 0
 
 # 2. vytiskni odpověď
 ```
@@ -17,10 +18,11 @@ for cislo in cisla:
 * Improve the above code so that it also prints the **average** of the numbers
 
 ```python
-cisla = [ 4.5, 1.5, 1.2, 8.9, 2.3]
+cisla = [4.5, 1.5, 1.2, 8.9, 2.3]
 soucet = 0
 for cislo in cisla:
     # přičti číslo k proměnné soucet. Nezapomenout na odsazení zleva!
+    soucet += 0
 
 # 2. vypočítej průměr
 
@@ -45,8 +47,10 @@ jidla = ["bun cha", "knedlo vepro zelo", "pho", "gulas"]  # Uloz do pole svoje o
 #
 poradi = 1
 for jidlo in jidla:
-    # 1. Vytiskni pořadí a jídlo
+    #  1. Vytiskni pořadí a jídlo
+    print()
     # 2. Zvyš pořadí o 1
+
 ```
 
 ## Input in for loop
@@ -56,7 +60,8 @@ for jidlo in jidla:
 ```python
 jidla = []
 for i in range(5):
-  # 1. získej hodnotu jídla od uživatele a připoj ho do listu jidla
+    # 1. získej hodnotu jídla od uživatele a připoj ho do listu jidla
+    input()
 
 # 2. Vytiskni odpověď  - pro tisk všechno hodnot v listu jidla použij: ', '.join(jidla)
 

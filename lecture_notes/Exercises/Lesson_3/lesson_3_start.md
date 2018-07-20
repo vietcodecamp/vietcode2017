@@ -20,9 +20,10 @@ vek = int(input("Kolik je ti let? "))
 # Poznámka. V if a else nezapomeňte na odsazení! Buď tab nebo 2 mezery od začátku.
 if ... :    # 1. doplň podmínku místo teček (podmínka: *let_do_duchodu je 65 a méně*)
     # 2. vypiš kolik let zbývá do důchodu
+    let_do_duchodu = 0
 else:  
     # 3. v opačném případě vypsat kolik let již v chůdodu je.
-
+    let_v_duchodu = 0
 ```
 
 * For the BMI calculator, do a quick check if people used meters instead of centimeters (the height should be over 100cm, for example)
@@ -33,6 +34,7 @@ vyska = float(input("Kolik měříš? (v metrech nebo centimetrech)"))
 
 if ... : # 1. doplnit podmínku (podmínka: *pokud je hodnota výšky nad 100*)
     # 2. pokud ano, převeď na metry
+    vyska_v_metrech = 0
 
 # 3. výpočet BMI
 
