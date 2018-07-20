@@ -229,8 +229,9 @@ y = input("Please enter a number")
 ```
 
 ## Exercises
-* [Start](./Exercises/lesson_1_start.md)
-* [Finished](../Exercises/lesson_1_finished.md)
+* [Files](../Exercises/Lesson_1)
+* [Start](../Exercises/Lesson_1/lesson_1_start.md)
+* [Finished](../Exercises/Lesson_1/lesson_1_finished.md)
 
 # Notes
 Add to list of required functions to each assignment
