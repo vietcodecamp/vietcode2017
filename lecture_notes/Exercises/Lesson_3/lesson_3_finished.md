@@ -140,7 +140,7 @@ Implement a simple ATM.
 5. If it's possible, print to the output "You have withdrawn [amount] CZK and your new balance is [balance] CZK.", otherwise print "Not enough money in the bank account!"
 
 ```python
-VALIDNI_CISLO_KARTY = 43-1199223344
+VALIDNI_CISLO_KARTY = "43-1199223344"
 VALIDNI_PIN = 3194
 
 ucetni_zustatek = 1000
