@@ -2,7 +2,7 @@
 **Lesson Goal**: At the end of this lecture the learner will be able to get an input from a user and use
 it to do basic calculations.
 
-## Outline
+## Outline
 1. Why do we need programming?
 2. Variables
 3. Basic operators
@@ -154,7 +154,7 @@ Example: The computer sums two numbers differently than two strings (`2 + 3` ret
 In Python3 we have integers, float, strings, boolean, objects
 
 | Short |Type| Explanation|
-| -- | -- | -- | -- |
+| -- | -- | -- |
 | `int` | integer  | whole numbers |
 | `float` | float | numbers with decimals |
 | `bool` | boolean | `True` or `False`|
