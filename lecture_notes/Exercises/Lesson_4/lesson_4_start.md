@@ -1,6 +1,5 @@
 # Exercises - Start
-
-## Warm-up
+## Warm-up
 * Given an array of numbers `cisla = [4.5, 1.5, 1.2, 8.9, 2.3]` calculate the **sum** of the numbers
   * Note: without using `sum()`
   * Hints: calculate the sum using a for loop and save partial results into a variable
@@ -79,4 +78,14 @@ soucet_velikosti_bot = 0
 # 4. Vypočítej průměr velikosti bot
 
 # 5. Vytiskni odpověď
+```
+
+## Class division
+* Lets say we a class students stored in a list `trida = ["Kevin", "Honza", "Radek", "Tue", "Adéla", "Vojta"]` and we need to divide the class into two halves. We want to have every odd member in one list and every even member in a second list. The result should look like this: `trida_a = ["Kevin", "Radek", "Adéla"]` and `trida_b = ["Honza", "Tue", "Vojta"]`
+
+```python
+trida = ["Kevin", "Honza", "Radek", "Tue", "Adéla", "Vojta"]
+trida_a = []
+trida_b = []
+
 ```

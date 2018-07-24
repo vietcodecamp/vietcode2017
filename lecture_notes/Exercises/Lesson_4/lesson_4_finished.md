@@ -76,3 +76,22 @@ for i in range(pocet_studentu):
 prumer = soucet_velikosti_bot / pocet_studentu
 print("Průměrná velikost bot je " + str(prumer))  
 ```
+
+## Class division
+* Lets say we a class students stored in a list `trida = ["Kevin", "Honza", "Radek", "Tue", "Adéla", "Vojta"]` and we need to divide the class into two halves. We want to have every odd member in one list and every even member in a second list. The result should look like this: `trida_a = ["Honza", "Tue", "Vojta"]` and `trida_b = ["Kevin", "Radek", "Adéla"]`
+
+```python
+trida = ["Kevin", "Honza", "Radek", "Tue", "Adéla", "Vojta"]
+trida_a = []
+trida_b = []
+
+for index in range(len(trida)):
+  kemper = trida[index]
+  if index % 2 == 0: # if index is even
+    trida_b.append(kemper)
+  else:
+    trida_a.append(kemper)  
+
+print(trida_a)
+print(trida_b)
+```
